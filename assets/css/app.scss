@@ -1,5 +1,5 @@
 /* This file is for your main application css. */
-@import "../node_modules/nprogress/nprogress.css";
+@import '../node_modules/nprogress/nprogress.css';
 
 @tailwind base;
 
@@ -7,6 +7,12 @@
 
 @tailwind utilities;
 
+@layer utilities {
+  .text-gradient {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 /* LiveView specific classes for your customizations */
 
 .phx-no-feedback.invalid-feedback,
