@@ -7,12 +7,6 @@
 
 @tailwind utilities;
 
-@layer utilities {
-  .text-gradient {
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
 /* LiveView specific classes for your customizations */
 
 .phx-no-feedback.invalid-feedback,

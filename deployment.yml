@@ -1,0 +1,70 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ceibo-land
+  labels:
+    app: ceibo-land
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ceibo-land
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: ceibo-land
+    spec:
+      containers:
+      - name: ceibo-land
+        image: ponyesteves/ceibo-land:5
+        ports:
+        - containerPort: 4000
+        env:
+        - name: HOST
+          value: land.ceibo.co
+        - name: PORT
+          value: "4000"
+        - name: SECRET_KEY_BASE
+          value: Zks/p88uM3Y/d8NTUIeJ93UiG+Atnb94EDVY7w5G05YL/Bk/Ij2U6Onx4Pyl5bjm
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ceibo-land
+  labels:
+    app: ceibo-land
+spec:
+  ports:
+  - name: "80"
+    port: 80
+    targetPort: 4000
+  selector:
+    app: ceibo-land
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ceibo-land-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  tls:
+    - hosts:
+        - land.ceibo.co
+      secretName: ceibo-land-tls
+  rules:
+    - host: land.ceibo.co
+      http:
+        paths:
+        - backend:
+            service:
+              name: ceibo-land
+              port:
+                number: 80
+          pathType: ImplementationSpecific
+
+

@@ -1,0 +1,25 @@
+#!/usr/bin/bash
+
+PREV_VERSION=$(cat ceibo-land.version)
+NEXT_VERSION=$(($PREV_VERSION + 1))
+
+echo "THIS IS VERSION: $NEXT_VERSION"
+
+# IMAGE="registry.digitalocean.com/ceibo-registry/crecer_inversiones:$NEXT_VERSION"
+IMAGE="ponyesteves/ceibo-land:$NEXT_VERSION"
+
+echo "Building $IMAGE"
+docker build . -t $IMAGE
+
+echo "Pushing $IMAGE"
+docker push $IMAGE
+
+echo "Updating Deployment Image to $IMAGE"
+kubectl set image deployment/ceibo-land ceibo-land=$IMAGE
+
+echo $NEXT_VERSION > ceibo-land.version
+
+git add ceibo-land.version
+git ci -m "Deploy of $IMAGE"
+git push
+

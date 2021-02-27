@@ -31,7 +31,8 @@ defmodule CeiboLandWeb do
     quote do
       use Phoenix.View,
         root: "lib/ceibo_land_web/templates",
-        namespace: CeiboLandWeb
+        namespace: CeiboLandWeb,
+        pattern: "**/*"
 
       # Import convenience functions from controllers
       import Phoenix.Controller,
