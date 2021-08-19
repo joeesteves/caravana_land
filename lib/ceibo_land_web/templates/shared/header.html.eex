@@ -17,15 +17,16 @@
             </button>
           </div>
         </div>
-        <div class="hidden space-x-8 md:flex md:ml-10">
-          <a href="#" class="text-base font-medium text-white hover:text-gray-300">Apps</a>
-          <a href="#" class="text-base font-medium text-white hover:text-gray-300">Integraciones</a>
-          <a href="#" class="text-base font-medium text-white hover:text-gray-300">Testimonios</a>
+        <div class="hidden space-x-8 md:flex md:flex-col text-white md:ml-10">
+          <a href="#" class="text-xl font-bold  hover:text-gray-300">
+            Caravana
+          </a>
+          <small>Sumale software a tus ideas</small>
         </div>
       </div>
       <div class="hidden md:flex md:items-center md:space-x-6">
         <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
-          Coordinar reunión
+          Charlamos
         </a>
       </div>
     </nav>
