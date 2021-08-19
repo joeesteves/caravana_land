@@ -1,16 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: caravana-land
+  namespace: caravana
+  labels:
+    app: caravana-land
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: caravana-land
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: caravana-land
+    spec:
+      containers:
+      - name: caravana-land
+        image: ponyesteves/ceibo-land:10
+        ports:
+        - containerPort: 4000
+        env:
+        - name: HOST
+          value: caravana.dev 
+        - name: PORT
+          value: "4000"
+        - name: SECRET_KEY_BASE
+          value: Zks/p88uM3Y/d8NTUIeJ93UiG+Atnb94EDVY7w5G05YL/Bk/Ij2U6Onx4Pyl5bjm
+      restartPolicy: Always
+---
 apiVersion: v1
 kind: Service
 metadata:
   name: caravana-land
+  namespace: caravana
   labels:
-    app: ceibo-land
+    app: caravana-land
 spec:
   ports:
   - name: "80"
     port: 80
     targetPort: 4000
   selector:
-    app: ceibo-land
+    app: caravana-land
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
