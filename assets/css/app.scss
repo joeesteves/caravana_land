@@ -7,6 +7,10 @@
 
 @tailwind utilities;
 
+input {
+  text-align: center;
+}
+
 /* LiveView specific classes for your customizations */
 
 .phx-no-feedback.invalid-feedback,
