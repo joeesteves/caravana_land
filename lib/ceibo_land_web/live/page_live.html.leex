@@ -1,8 +1,7 @@
 <div class="bg-white">
   <div class="relative overflow-hidden">
     <%= render CeiboLandWeb.SharedView, "header.html", socket: @socket %>
-    <%= render CeiboLandWeb.SharedView, "main.html", [] %>
+    <%= render CeiboLandWeb.SharedView, "main.html", animate: @animate %>
     <%= render CeiboLandWeb.SharedView, "footer.html", [] %>
   </div>
 </div>
-

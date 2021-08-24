@@ -18,12 +18,34 @@ import { Socket } from 'phoenix'
 import NProgress from 'nprogress'
 import { LiveSocket } from 'phoenix_live_view'
 
+
+let Hooks = {}
+
+Hooks.AnimateOnIntersect = {
+  mounted() {
+    this.observer = new IntersectionObserver(entries => {
+      const entry = entries[0];
+      if  (entry.isIntersecting) {
+        console.log("el elemento con id ", this.el.id, " fue interceptado")
+        this.pushEvent("animate", {element_id: this.el.id})
+      }
+    })
+
+    this.observer.observe(this.el)
+
+  },
+  destroyed() {
+    this.observer.disconnect()
+  }
+}
+
 let csrfToken = document
   .querySelector("meta[name='csrf-token']")
   .getAttribute('content')
 
 let liveSocket = new LiveSocket('/live', Socket, {
   // This is needed to make alpinejs work within liveview
+  hooks: Hooks,
   dom: {
     onBeforeElUpdated(from, to) {
       if (from.__x) {
