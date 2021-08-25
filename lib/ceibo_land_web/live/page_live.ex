@@ -26,6 +26,7 @@ defmodule CeiboLandWeb.PageLive do
   end
 
   def handle_event("animate", %{"element_id" => element_id}, socket) do
+    IO.inspect(socket.assigns.animate)
     {:noreply, update(socket, :animate, &([ element_id | &1]))}
   end
 

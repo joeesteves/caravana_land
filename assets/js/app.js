@@ -26,10 +26,9 @@ Hooks.AnimateOnIntersect = {
     this.observer = new IntersectionObserver(entries => {
       const entry = entries[0];
       if  (entry.isIntersecting) {
-        console.log("el elemento con id ", this.el.id, " fue interceptado")
         this.pushEvent("animate", {element_id: this.el.id})
       }
-    })
+    }, {threshold: [parseFloat(this.el.dataset.threshold)]})
 
     this.observer.observe(this.el)
 
