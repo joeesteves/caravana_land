@@ -103,16 +103,16 @@
   </div>
 
 
-     <!-- Benchmark section -->
+  <!-- Benchmark section -->
   <div class="relative bg-gray-50 py-16 sm:py-24 lg:py-32">
     <div class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
       <div>
         <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Benchmark</h2>
         <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-          Nunca escuché de Elixir... ¿es confiable?
+          Nunca escuché sobre Elixir... ¿es confiable?
         </p>
         <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-          Las <b>mejores compañías del mundo</b> basan sus productos en este lenguage de programación. Sin él les sería imposible sostener los servidores funcionando correctamente frente a <b>millones de usuarios en simultáneo!</b>
+          Las <b>mejores compañías del mundo</b> basan sus productos en éste lenguaje de programación. Sin Elixir les sería imposible sostener los servidores funcionando correctamente dando servicio a <b>millones de usuarios en simultáneo!</b>
         </p>
       </div>
       <div id="benchmark_logos" phx-hook="AnimateOnIntersect" data-threshold="0.25" class="<%= if "benchmark_logos" in @animate, do: 'animate__animated animate__fadeInUp', else: 'opacity-0' %> flex flex-wrap justify-center items-start mt-8">
@@ -167,16 +167,17 @@
   <!-- Feature section with grid -->
   <div id="feature-section" phx-hook="AnimateOnIntersect" data-threshold="0.05" class="<%= if "feature-section" in @animate, do: 'animate__animated animate__fadeInUp', else: 'opacity-0' %> relative bg-white py-16 sm:py-24 lg:py-32">
     <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-      <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Deploy faster</h2>
+      <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Deploys más rápidos</h2>
       <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-        Everything you need to deploy your app
+        Todo lo que necesita tu app
       </p>
       <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-        Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
+        En Caravana ofrecemos un servicio integral para el desarrollo de apps, desde el diseño y desarrollo del producto hasta su publicación en la web.
       </p>
       <div class="mt-12">
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="pt-6">
+
+          <div id="feature_1" phx-hook="AnimateOnIntersect" data-threshold="0.15" class="<%= if "feature_1" in @animate, do: 'animate__animated animate__zoomIn', else: 'opacity-0'%> pt-6">
             <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
               <div class="-mt-6">
                 <div>
@@ -189,13 +190,13 @@
                 </div>
                 <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Push to Deploy</h3>
                 <p class="mt-5 text-base text-gray-500">
-                  Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                  Las actualizaciones de tu app se hacen de manera instantánea, sin afectar la experiencia de tus usuarios finales
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="pt-6">
+          <div id="feature_2" phx-hook="AnimateOnIntersect" data-threshold="0.30" class="<%= if "feature_2" in @animate, do: 'animate__animated animate__zoomIn', else: 'opacity-0'%> pt-6">
             <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
               <div class="-mt-6">
                 <div>
@@ -206,34 +207,43 @@
                     </svg>
                   </span>
                 </div>
-                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">SSL Certificates</h3>
+                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Certificados SSL</h3>
                 <p class="mt-5 text-base text-gray-500">
-                  Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                  Permiten una conexión bajo el protocolo https garantizando una conexión segura desde el servidor hasta el navegador.
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="pt-6">
+
+          <div id="feature_3" phx-hook="AnimateOnIntersect" data-threshold="0.45" class="<%= if "feature_3" in @animate, do: 'animate__animated animate__zoomIn', else: 'opacity-0'%> pt-6">
             <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
               <div class="-mt-6">
                 <div>
-                  <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                  <span class="inline-flex items-center justify-center p-2 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
                     <!-- Heroicon name: outline/refresh -->
-                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    <svg class="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 978 388" stroke="currentColor" aria-hidden="true">
+                      <g transform="matrix(7.83465,0,0,7.83465,-398.586,-488.321)">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M142.662,103.442L146.265,94.331L156.668,94.331L151.73,80.51L157.905,64.896L175.59,111.852L162.548,111.852L159.526,103.442L142.662,103.442Z"/>
+                      </g>
+                      <g transform="matrix(7.83465,0,0,7.83465,-398.586,-488.321)">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M131.535,109.284L150.467,62.328L137.916,62.329L124.965,92.673L115.755,62.329L106.108,62.329L96.22,92.673L89.246,78.845L82.935,98.288L89.343,109.284L101.695,109.284L110.631,82.072L119.15,109.284L131.535,109.284Z"/>
+                      </g>
+                      <g transform="matrix(7.83465,0,0,7.83465,-398.586,-488.321)">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M62.789,93.166L70.52,93.166C72.862,93.166 74.947,92.905 76.776,92.382L78.775,86.223L84.363,69.007C83.938,68.333 83.452,67.694 82.905,67.093C80.036,63.917 75.838,62.33 70.312,62.33L50.875,62.33L50.875,109.286L62.789,109.286L62.789,93.166ZM73.022,73.132C74.143,74.26 74.703,75.77 74.703,77.66C74.703,79.566 74.21,81.077 73.225,82.194C72.144,83.435 70.155,84.056 67.257,84.056L62.789,84.056L62.789,71.441L67.29,71.441C69.991,71.441 71.902,72.004 73.022,73.132Z"/>
+                      </g>
                     </svg>
                   </span>
                 </div>
-                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Simple Queues</h3>
+                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Progressive Web App</h3>
                 <p class="mt-5 text-base text-gray-500">
-                  Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                  Las PWA reúnen lo mejor de las aplicaciones web y de las nativas, incluso son consideradas una evolución de las mismas
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="pt-6">
+          <div id="feature_4" phx-hook="AnimateOnIntersect" data-threshold="0.15" class="<%= if "feature_4" in @animate, do: 'animate__animated animate__zoomIn', else: 'opacity-0'%> pt-6">
             <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
               <div class="-mt-6">
                 <div>
@@ -244,15 +254,15 @@
                     </svg>
                   </span>
                 </div>
-                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Advanced Security</h3>
+                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">100% Online</h3>
                 <p class="mt-5 text-base text-gray-500">
-                  Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                  Elixir nos permite garantizar que tu app va a estar siempre funcional gracias a su sistema integrado de supervisión.
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="pt-6">
+          <div id="feature_5" phx-hook="AnimateOnIntersect" data-threshold="0.30" class="<%= if "feature_5" in @animate, do: 'animate__animated animate__zoomIn', else: 'opacity-0'%> pt-6">
             <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
               <div class="-mt-6">
                 <div>
@@ -264,15 +274,15 @@
                     </svg>
                   </span>
                 </div>
-                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Powerful API</h3>
+                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Desarrollo de APIs</h3>
                 <p class="mt-5 text-base text-gray-500">
-                  Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                  Tu app no estará "aislada". La integración mediante APIs te permitirá sincronizar e integrar múltiples fuentes de información.
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="pt-6">
+          <div id="feature_6" phx-hook="AnimateOnIntersect" data-threshold="0.45" class="<%= if "feature_6" in @animate, do: 'animate__animated animate__zoomIn', else: 'opacity-0'%> pt-6">
             <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
               <div class="-mt-6">
                 <div>
@@ -283,9 +293,9 @@
                     </svg>
                   </span>
                 </div>
-                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Database Backups</h3>
+                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Bases de Datos</h3>
                 <p class="mt-5 text-base text-gray-500">
-                  Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                  Las DB son los activos más importantes. Por eso garantizamos backups programados automáticamente.
                 </p>
               </div>
             </div>
@@ -493,7 +503,7 @@
     </div>
   </div>
 
-  <!-- CTA Section -->
+  <!-- End Section -->
   <div class="relative bg-gray-900">
     <div class="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
       <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixqx=h5SRIeeo7j&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&sat=-100" alt="">
@@ -502,18 +512,18 @@
     <div class="relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32">
       <div class="md:ml-auto md:w-1/2 md:pl-10">
         <h2 class="text-base font-semibold uppercase tracking-wider text-gray-300">
-          Award winning support
+          Compañía en Caravana
         </h2>
         <p class="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">
-          We’re here to help
+          Estamos para ayudarte!
         </p>
         <p class="mt-3 text-lg text-gray-300">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt duis.
+          Bajar a tierra una idea lleva tiempo. Nuestra experiencia en varios rubros te ayudará a terminar de definir el norte
         </p>
         <div class="mt-8">
           <div class="inline-flex rounded-md shadow">
             <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
-              Visit the help center
+              Escribinos por Whatsapp
               <!-- Heroicon name: solid/external-link -->
               <svg class="-mr-1 ml-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
