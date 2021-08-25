@@ -98,3 +98,8 @@ input {
   display: block;
   margin: -1rem 0 2rem;
 }
+
+iframe[src="/phoenix/live_reload/frame"] {
+  display: none;
+}
+
