@@ -9,7 +9,7 @@
               <span class="bg-clip-text text-3xl text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 block">avancemos juntos</span>
             </h1>
             <p class="text-base text-gray-300 mt-5 sm:text-xl lg:text-lg xl:text-xl sm:text-right">
-              Nos especializamos en el desarrollo de software de gestión a medida. Nuestro modelo de ciclo corto, te permitirá aportar feedback en todo momento, para obtener una solución de acuerdo a tus expectativas.
+              Nos especializamos en el desarrollo de software de gestión a medida. Nuestro modelo de ciclo corto te permitirá aportar feedback en todo momento para obtener una solución de acuerdo a tus expectativas.
             </p>
             <div class="mt-10 sm:mt-12">
               <form action="#" class="sm:max-w-xl sm:mx-auto lg:mx-0" x-data="{name: ''}">
@@ -32,7 +32,6 @@
 
         <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
           <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-            <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
             <img class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="https://tailwindui.com/img/component-images/cloud-illustration-teal-cyan.svg" alt="">
           </div>
         </div>
@@ -52,9 +51,32 @@
           Si quieres saber más al respecto, puedes hacer click sobre las imágenes
         </p>
       </div>
-      <div class="mt-12 -mb-10 sm:-mb-24">
-        <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5" src="/images/tu_libreria.png" alt="">
+
+      <div id="portfolio_carousel" phx-hook="Carousel" x-data="{}" class="flex flex-col overflow-y-hidden max-h-80 mt-12">
+        <div class="mySlides fade">
+          <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5" src="/images/tu_libreria.png" alt="">
+        </div>
+
+        <div class="mySlides fade">
+          <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5" src="https://tailwindui.com/img/component-images/green-project-app-screenshot.jpg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+          <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5" src="/images/tu_libreria.png" alt="">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" @click="carouselHook.plusSlides(-1)">&#10094;</a>
+        <a class="next" @click="carouselHook.plusSlides(1)">&#10095;</a>
+              <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
       </div>
+
+
     </div>
   </div>
 
@@ -167,12 +189,12 @@
   <!-- Feature section with grid -->
   <div id="feature-section" phx-hook="AnimateOnIntersect" data-threshold="0.05" class="<%= if "feature-section" in @animate, do: 'animate__animated animate__fadeInUp', else: 'opacity-0' %> relative bg-white py-16 sm:py-24 lg:py-32">
     <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-      <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Deploys más rápidos</h2>
+      <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Software Factory</h2>
       <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-        Todo lo que necesita tu app
+        Todo lo que necesita tu idea
       </p>
       <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-        En Caravana ofrecemos un servicio integral para el desarrollo de apps, desde el diseño y desarrollo del producto hasta su publicación en la web.
+        En Caravana ofrecemos un servicio integral para el desarrollo de Software. <br> Desde el diseño y desarrollo del producto hasta su puesta en producción.
       </p>
       <div class="mt-12">
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -190,7 +212,7 @@
                 </div>
                 <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Push to Deploy</h3>
                 <p class="mt-5 text-base text-gray-500">
-                  Las actualizaciones de tu app se hacen de manera instantánea, sin afectar la experiencia de tus usuarios finales
+                  Nuestra infraestructura es 100% cloud, lo que reducirá tus costos sin sacrificar la performance.
                 </p>
               </div>
             </div>
@@ -316,7 +338,7 @@
           </div>
         </div>
       </div>
-      <div class="<%= if "testimonial-section" in @animate, do: 'animate__animated animate__fadeInRightBig animate__slow', else: 'opacity-0' %> mt-4 sm:mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
+      <div class="<%= if "testimonial-section" in @animate, do: 'animate__animated animate__fadeInRightBig', else: 'opacity-0' %> mt-4 sm:mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
         <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
           <blockquote class="px-4 sm:pl-20">
             <div>
