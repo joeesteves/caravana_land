@@ -66,15 +66,23 @@ Hooks.Carousel = {
     showSlides((slideIndex += n))
   },
 }
-// end Carousel logic
 
 Hooks.AnimateOnIntersect = {
   mounted() {
+    const animateClasses = this.el.dataset.animateClasses
+
+    if (!animateClasses) return
+
     this.observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0]
         if (entry.isIntersecting) {
-          this.pushEvent('animate', { element_id: this.el.id })
+          const parsedAnimateClasses = animateClasses
+            .split(', ')
+            .concat('animate__animated')
+            .reverse()
+
+          this.el.classList.add(...parsedAnimateClasses)
         }
       },
       { threshold: [parseFloat(this.el.dataset.threshold)] }

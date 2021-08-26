@@ -186,7 +186,7 @@
   </div>
 
   <!-- Feature section with grid -->
-  <div id="feature-section" phx-hook="AnimateOnIntersect" data-threshold="0.05" class="<%= if "feature-section" in @animate, do: 'animate__animated animate__fadeInUp', else: 'opacity-0' %> relative bg-white py-16 sm:py-24 lg:py-32">
+  <div id="feature-section" phx-hook="AnimateOnIntersect" data-threshold="0.05" data-animate-classes="animate__fadeInUp, animate__delay-5s" class="relative bg-white py-16 sm:py-24 lg:py-32">
     <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
       <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Software Factory</h2>
       <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
@@ -217,7 +217,7 @@
             </div>
           </div>
 
-          <div id="feature_2" phx-hook="AnimateOnIntersect" data-threshold="0.30" class="<%= if "feature_2" in @animate, do: 'animate__animated animate__zoomIn', else: 'opacity-0'%> pt-6">
+          <div id="feature_2" phx-hook="AnimateOnIntersect" data-threshold="0.30" class="<%= if "feature_2" in @animate, do: 'animate__animated animate__zoomIn' %> pt-6">
             <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
               <div class="-mt-6">
                 <div>
