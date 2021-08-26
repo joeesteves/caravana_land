@@ -18,77 +18,77 @@ import { Socket } from 'phoenix'
 import NProgress from 'nprogress'
 import { LiveSocket } from 'phoenix_live_view'
 
-
-
-
-
 let Hooks = {}
 
 //  Carousel JS logic
 Hooks.Carousel = {
   mounted() {
     window.carouselHook = this
-    var slideIndex = 2;
-    showSlides(slideIndex);
-    
+    var slideIndex = 2
+    showSlides(slideIndex)
+
     // Next/previous controls
     function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
+      showSlides((slideIndex += n))
     }
 
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides((slideIndex = n))
+    }
+
+    function showSlides(n) {
+      var i
+      var slides = document.getElementsByClassName('mySlides')
+      var dots = document.getElementsByClassName('dot')
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none'
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(' active', '')
+      }
+      slides[slideIndex - 1].style.display = 'block'
+      dots[slideIndex - 1].className += ' active'
+    }
   },
   plusSlides(n) {
     console.log(n)
-    showSlides(slideIndex += n);
-  }
-
+    showSlides((slideIndex += n))
+  },
 }
-// end Carousel logic
+
 Hooks.AnimateOnIntersect = {
   mounted() {
-  }
-}
+    let animateClasses = this.el.dataset.animateClasses
 
-Hooks.AnimateOnIntersects = {
-  mounted() {
-    console.log(this.el.dataset.animateClasses)
-    this.observer = new IntersectionObserver(entries => {
-      const entry = entries[0];
-      if  (entry.isIntersecting) {
-        const receivedAnimateClasses = this.el.dataset.animateClasses 
-        const animateClasses = receivedAnimateClasses ? receivedAnimateClasses.split(", ").append('animate__animated') : ['']
-        this.el.classList.add(...animateClasses)
-        // this.pushEvent("animate", {element_id: this.el.id})
-      }
-    }, {threshold: [parseFloat(this.el.dataset.threshold)]})
+    if (!animateClasses) return
+
+    this.observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0]
+        if (entry.isIntersecting) {
+          const parsedAnimateClasses = animateClasses
+            .split(', ')
+            .concat('animate__animated')
+            .reverse()
+
+          this.el.classList.add(...parsedAnimateClasses)
+        }
+      },
+      { threshold: [parseFloat(this.el.dataset.threshold)] }
+    )
 
     this.observer.observe(this.el)
-
   },
   destroyed() {
     this.observer.disconnect()
-  }
+  },
 }
 
 let csrfToken = document
