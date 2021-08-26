@@ -1,0 +1,41 @@
+<div class="relative bg-gray-50 py-16 sm:py-24 lg:py-32">
+  <div class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
+    <div>
+      <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Nuestro Stack</h2>
+      <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+        ¿Qué quiere decir eso?
+      </p>
+      <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+        Un <i>stack</i> es una combinación de lenguajes de programación y tecnologías. Nosotros somos expertos en
+        <b>P</b>hoenix, <b>E</b>lixir, <b>T</b>ailwindCSS, <b>A</b>lpineJS y <b>L</b>iveView.
+        <br>
+        Así garantizamos <b>productos robustos y escalables</b>
+      </p>
+    </div>
+    <div id="stack_logos" phx-hook="AnimateOnIntersect" data-threshold="0.25" class="<%= if "stack_logos" in @animate, do: 'animate__animated animate__fadeInUp', else: 'opacity-0' %> flex flex-col space-y-4 mt-2 sm:flex-wrap sm:flex-row sm:justify-center sm:space-x-4 sm:mt-8">
+      <a href="https://phoenixframework.org/" target="_blank" class="mt-4 rounded-lg shadow-xl transition duration-30000 ease-in-out transform hover:scale-105">
+        <img class="mx-auto p-4 h-20" src="/images/phoenix.png" alt="">
+      </a>
+      <a href="https://elixir-lang.org/" target="_blank" class="rounded-lg shadow-xl transition duration-30000 ease-in-out transform hover:scale-105">
+        <img class="mx-auto p-4 h-20" src="/images/elixir.png" alt="">
+      </a>
+      <a href="https://tailwindcss.com/" target="_blank" class="rounded-lg shadow-xl transition duration-30000 ease-in-out transform hover:scale-105">
+        <div class="rounded-lg shadow-xl h-20 pt-6 pl-6">
+          <%= render "svgs/tailwind_logo.html", [] %>
+        </div>
+      </a>
+      <a href="https://alpinejs.dev/" target="_blank" class="rounded-lg shadow-xl transition duration-30000 ease-in-out transform hover:scale-105">
+        <img class="mx-auto p-4 h-20" src="/images/alpine_logo.svg" alt="">
+      </a>
+    </div>
+
+  </div>
+  <div id="codersrank" class="mt-6 sm:mx-10 flex flex-col sm:flex-row justify-center sm:space-x-4">
+    <div phx-hook="AnimateOnIntersect" data-threshold="0.15"  class="p-2 sm:p-0 sm:mt-4 sm:w-1/2 xl:w-1/3 transition duration-30000 ease-in-out transform hover:scale-105">
+      <codersrank-summary username="ponyesteves" branding="false"></codersrank-summary>
+    </div>
+    <div phx-hook="AnimateOnIntersect" data-threshold="0.15" class="p-2 sm:p-0 sm:mt-4 sm:w-1/2 xl:w-1/3 transition duration-30000 ease-in-out transform hover:scale-105">
+      <codersrank-summary username="nicocirio" phx-hook="AnimateOnIntersect" data-threshold="0.15"></codersrank-summary>
+    </div>
+  </div>
+</div>
