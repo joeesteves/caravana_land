@@ -65,13 +65,21 @@ Hooks.Carousel = {
 
 }
 // end Carousel logic
-
 Hooks.AnimateOnIntersect = {
   mounted() {
+  }
+}
+
+Hooks.AnimateOnIntersects = {
+  mounted() {
+    console.log(this.el.dataset.animateClasses)
     this.observer = new IntersectionObserver(entries => {
       const entry = entries[0];
       if  (entry.isIntersecting) {
-        this.pushEvent("animate", {element_id: this.el.id})
+        const receivedAnimateClasses = this.el.dataset.animateClasses 
+        const animateClasses = receivedAnimateClasses ? receivedAnimateClasses.split(", ").append('animate__animated') : ['']
+        this.el.classList.add(...animateClasses)
+        // this.pushEvent("animate", {element_id: this.el.id})
       }
     }, {threshold: [parseFloat(this.el.dataset.threshold)]})
 
