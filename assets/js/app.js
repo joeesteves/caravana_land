@@ -3,6 +3,10 @@
 // its own CSS file.
 import '../css/app.scss'
 import 'alpinejs'
+import CodersrankSummary from '@codersrank/summary'
+
+// register web component as <codersrank-summary> element
+window.customElements.define('codersrank-summary', CodersrankSummary)
 
 // webpack automatically bundles all modules in your
 // entry points. Those entry points can be configured
@@ -18,69 +22,69 @@ import { Socket } from 'phoenix'
 import NProgress from 'nprogress'
 import { LiveSocket } from 'phoenix_live_view'
 
-
-
-
-
 let Hooks = {}
 
 //  Carousel JS logic
 Hooks.Carousel = {
   mounted() {
     window.carouselHook = this
-    var slideIndex = 2;
-    showSlides(slideIndex);
-    
+    var slideIndex = 2
+    showSlides(slideIndex)
+
     // Next/previous controls
     function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
+      showSlides((slideIndex += n))
     }
 
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides((slideIndex = n))
+    }
+
+    function showSlides(n) {
+      var i
+      var slides = document.getElementsByClassName('mySlides')
+      var dots = document.getElementsByClassName('dot')
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none'
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(' active', '')
+      }
+      slides[slideIndex - 1].style.display = 'block'
+      dots[slideIndex - 1].className += ' active'
+    }
   },
   plusSlides(n) {
     console.log(n)
-    showSlides(slideIndex += n);
-  }
-
+    showSlides((slideIndex += n))
+  },
 }
 // end Carousel logic
 
 Hooks.AnimateOnIntersect = {
   mounted() {
-    this.observer = new IntersectionObserver(entries => {
-      const entry = entries[0];
-      if  (entry.isIntersecting) {
-        this.pushEvent("animate", {element_id: this.el.id})
-      }
-    }, {threshold: [parseFloat(this.el.dataset.threshold)]})
+    this.observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0]
+        if (entry.isIntersecting) {
+          this.pushEvent('animate', { element_id: this.el.id })
+        }
+      },
+      { threshold: [parseFloat(this.el.dataset.threshold)] }
+    )
 
     this.observer.observe(this.el)
-
   },
   destroyed() {
     this.observer.disconnect()
-  }
+  },
 }
 
 let csrfToken = document
