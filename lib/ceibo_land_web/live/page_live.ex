@@ -26,8 +26,13 @@ defmodule CeiboLandWeb.PageLive do
   end
 
   def handle_event("animate", %{"element_id" => element_id}, socket) do
-    IO.inspect(socket.assigns.animate)
     {:noreply, update(socket, :animate, &([ element_id | &1]))}
+  end
+
+  def handle_event("create_lead", %{"email" => email}, socket) do
+    Trello.create_card(%{name: "Responder a #{email}"})
+
+    {:noreply, socket}
   end
 
   defp search(query) do
