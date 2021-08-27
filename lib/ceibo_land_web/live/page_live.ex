@@ -25,6 +25,12 @@ defmodule CeiboLandWeb.PageLive do
     end
   end
 
+  def handle_event("create_lead", %{"email" => email}, socket) do
+    Trello.create_card(%{name: "Responder a #{email}"})
+
+    {:noreply, socket}
+  end
+
   defp search(query) do
     if not CeiboLandWeb.Endpoint.config(:code_reloader) do
       raise "action disabled when not in development"

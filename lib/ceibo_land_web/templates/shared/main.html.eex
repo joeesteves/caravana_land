@@ -1,41 +1,10 @@
 <main>
-  <div class="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
-    <div class="mx-auto max-w-7xl lg:px-8">
-      <div class="lg:grid lg:grid-cols-2 lg:gap-8">
-        <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
-          <div class="lg:py-4">
-            <h1 class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 text-right">
-              <span class="block whitespace-nowrap">Subí a la <b>caravana</b></span>
-              <span class="bg-clip-text text-3xl text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 block">avancemos juntos</span>
-            </h1>
-            <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl text-right">
-              Nos especializamos en el desarrollo de software de gestión a medida. Nuestro modelo de ciclo corto, te permitirá aportar feedback en todo momento, para obtener una solución de acuerdo a tus expectativas.
-            </p>
-            <div class="mt-10 sm:mt-12">
-              <form action="#" class="sm:max-w-xl sm:mx-auto lg:mx-0" x-data="{name: ''}">
-                <div class="sm:flex">
-                  <div class="min-w-0 flex-1">
-                    <label for="email" class="sr-only">Nombre</label>
-                    <input x-model="name" id="email" type="text" placeholder="Nombre" class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
-                  </div>
-                  <div class="mt-3 sm:mt-0 sm:ml-3">
-                    <a x-bind:href="`https://api.whatsapp.com/send?phone=5491144406644&text=Soy ${name} desde la página de Caravana para contarte mi idea :)`" target="_blank" type="submit" class="text-center block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
-                      ¿ Charlamos ?
-                    </a>
-                  </div>
-                </div>
-                <p class="mt-3 text-1x text-gray-300 sm:mt-4">En los próximos días te vamos a estar llamando para escuchar tu idea y evaluar su factibilidad.</p>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
-          <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-            <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
-            <img class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="https://tailwindui.com/img/component-images/cloud-illustration-teal-cyan.svg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <%= render_section("welcome.html", bg_color: "bg-gray-900") %>
+  <!-- render_section("portfolio.html", bg_color: "bg-gray-50") -->
+  <%= render_section("features.html", bg_color: "bg-white") %>
+  <%= render_section("stack.html", bg_color: "bg-gray-50") %>
+  <%= render_section("benchmark.html", bg_color: "bg-white") %>
+  <%= render_section("testimonials.html", bg_color: "bg-gradient-to-r from-teal-500 to-cyan-600") %>
+  <%= render_section("blog.html", bg_color: "bg-gray-50") %>
+  <%= render_section("end.html", bg_color: "bg-gray-900") %>
 </main>
