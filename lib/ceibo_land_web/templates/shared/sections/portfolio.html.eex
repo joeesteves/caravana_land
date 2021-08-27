@@ -1,7 +1,8 @@
-<div class="relative bg-gray-50 pt-16 sm:pt-24 lg:pt-32">
+<div id="portfolio" class="relative <%= @bg_color %> py-16">
   <div class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
-    <div>
-      <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Portfolio</h2>
+
+    <div id="porfolio_header" phx-hook="AnimateOnIntersect" data-threshold="0.05" data-animate-classes="animate__fadeInUp, opacity-100" class="opacity-0">
+      <h2 class="text-base bg-gree font-semibold tracking-wider text-cyan-600 uppercase">Portfolio</h2>
       <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
         Nuestros últimos trabajos
       </p>
@@ -33,7 +34,5 @@
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
     </div>
-
-
   </div>
 </div>

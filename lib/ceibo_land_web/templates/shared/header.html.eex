@@ -1,4 +1,4 @@
-<header x-data="{isOpen: false}" class="relative">
+<header class="relative">
   <div class="bg-gray-900 pt-2">
     <nav class="relative max-w-7xl mx-auto flex items-center justify-center sm:justify-between px-4 sm:px-6" aria-label="Global">
       <div class="flex items-center flex-1">

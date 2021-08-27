@@ -3,10 +3,10 @@
 // its own CSS file.
 import '../css/app.scss'
 import 'alpinejs'
-import CodersrankSummary from '@codersrank/summary'
+// import CodersrankSummary from '@codersrank/summary'
 
-// register web component as <codersrank-summary> element
-window.customElements.define('codersrank-summary', CodersrankSummary)
+// // register web component as <codersrank-summary> element
+// window.customElements.define('codersrank-summary', CodersrankSummary)
 
 // webpack automatically bundles all modules in your
 // entry points. Those entry points can be configured

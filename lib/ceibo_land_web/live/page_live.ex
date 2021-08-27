@@ -3,7 +3,7 @@ defmodule CeiboLandWeb.PageLive do
 
   @impl true
   def mount(_params, _session, socket) do
-    {:ok, assign(socket, query: "", results: %{}, animate: [])}
+    {:ok, assign(socket, query: "", results: %{}, current_bg_color: "bg-gray-900")}
   end
 
   @impl true

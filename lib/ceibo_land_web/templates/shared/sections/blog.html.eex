@@ -1,6 +1,7 @@
-<div class="relative bg-gray-50 py-16 sm:py-24 lg:py-32">
+<div id="blog" class="relative <%= @bg_color %> py-16">
   <div class="relative">
-    <div class="text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+
+    <div id="blog_header" phx-hook="AnimateOnIntersect" data-threshold="0.05" data-animate-classes="animate__fadeInUp, opacity-100" class="opacity-0 text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
       <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Capacitate</h2>
       <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
         Recursos Útiles
@@ -9,9 +10,10 @@
         Somos amantes del STACK que usamos. Si te interesa conocer más, te recomendamos los siguientes artículos
       </p>
     </div>
+
     <div class="mt-12 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl">
 
-      <div id="blog_article_1" phx-hook="AnimateOnIntersect" data-threshold="0.15" class="<%= if "blog_article_1" in @animate, do: 'animate__animated animate__zoomIn', else: 'opacity-0'%> flex flex-col rounded-lg shadow-lg overflow-hidden">
+      <div id="blog_article_1" phx-hook="AnimateOnIntersect" data-threshold="0.15" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 flex flex-col rounded-lg shadow-lg overflow-hidden">
         <div class="flex-shrink-0">
           <img class="h-48 w-full object-cover" src="https://joanleon.dev/static/b1d73a3f837b55ed97ae7641de0c86bf/7d769/TailwindCSS.png" alt="">
         </div>
@@ -26,7 +28,7 @@
               <p class="text-xl font-semibold text-gray-900">
                 Mi opinión sobre Tailwind CSS
               </p>
-              <p class="mt-3 text-base text-gray-500">
+              <p class="mt-3 text-base text-justify text-gray-500">
                 Los frameworks CSS basados en el patrón "Utility-First" están ganando mucha tracción en el mundo frontend, y en especial Tailwind CSS. ¿Es una buena opción?, ¿Cubre todas las necesidades en todos los escenarios?, ¿Debemos usarlo en nuestro próximo proyecto?
               </p>
             </a>
@@ -60,7 +62,7 @@
         </div>
       </div>
 
-      <div id="blog_article_2" phx-hook="AnimateOnIntersect" data-threshold="0.30" class="<%= if "blog_article_2" in @animate, do: 'animate__animated animate__zoomIn', else: 'opacity-0' %> flex flex-col rounded-lg shadow-lg overflow-hidden">
+      <div id="blog_article_2" phx-hook="AnimateOnIntersect" data-threshold="0.30" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 flex flex-col rounded-lg shadow-lg overflow-hidden">
         <div class="flex-shrink-0">
           <img class="h-48 w-full object-cover" src="https://i.ytimg.com/vi/MZvmYaFkNJI/maxresdefault.jpg" alt="">
         </div>
@@ -73,9 +75,9 @@
             </p>
             <a href="https://www.youtube.com/watch?v=MZvmYaFkNJI" target="_blank" class="block mt-2">
               <p class="text-xl font-semibold text-gray-900">
-                Build a real-time Twitter clone in 15 minutes with LiveView and Phoenix 1.5
+                Crea un clon de twitter en 15 minutos con LiveView y Phoenix 1.5
               </p>
-              <p class="mt-3 text-base text-gray-500">
+              <p class="mt-3 text-base text-justify text-gray-500">
                 El creador de Phoenix muestra cómo usa LiveView para hacer un clon de Twitter en tan sólo 15 minutos. No sólo resulta increíble el potencial de Phoenix LiveView, sino que ver a su creador codeando es una gran oportunidad para aprender!
               </p>
             </a>
@@ -109,7 +111,7 @@
         </div>
       </div>
 
-      <div id="blog_article_3" phx-hook="AnimateOnIntersect" data-threshold="0.45" class="<%= if "blog_article_3" in @animate, do: 'animate__animated animate__zoomIn', else: 'opacity-0' %> flex flex-col rounded-lg shadow-lg overflow-hidden">
+      <div id="blog_article_3" phx-hook="AnimateOnIntersect" data-threshold="0.45" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 flex flex-col rounded-lg shadow-lg overflow-hidden">
         <div class="flex-shrink-0">
           <img class="h-48 w-full object-cover" src="https://www.geistinteractive.com/wp-content/uploads/2018/11/AOC_TwitterAndFeatureImage.png" alt="">
         </div>
@@ -124,7 +126,7 @@
               <p class="text-xl font-semibold text-gray-900">
                 Advent of Code 2018 by José Valim
               </p>
-              <p class="mt-3 text-base text-gray-500">
+              <p class="mt-3 text-base text-justify text-gray-500">
                 AOC es un clásico desafío anual del tiempo de Adviento en donde se plantean varios problemas a resolver en el lenguage de programación que más te guste. Te compartimos cómo José Valim, el creador de Elixir, usa nuestro lenguage favorito para resolver los problemas de 2018. Una mente brillante que te va a deslumbrar con su elegancia a la hora de codear!
               </p>
             </a>

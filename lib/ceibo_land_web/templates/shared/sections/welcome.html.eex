@@ -1,4 +1,4 @@
-<div class="pt-10 sm:pt-0 bg-gray-900 lg:pb-14 lg:overflow-hidden">
+<div id="welcome" class="pt-10 sm:pt-0 <%= @bg_color %> sm:pb-16 lg:overflow-hidden">
   <div class="mx-auto max-w-7xl lg:px-8">
     <div class="lg:grid lg:grid-cols-2 lg:gap-24 xl:gap-40">
       <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
@@ -29,9 +29,12 @@
         </div>
       </div>
 
-      <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
+      <div class="hover:animate-pulse -mt-8 -mb-32 sm:mt-12 sm:-mb-48 lg:m-0 lg:relative z-10">
         <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-          <img class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="https://tailwindui.com/img/component-images/cloud-illustration-teal-cyan.svg" alt="">
+          <div class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none">
+            <%= render "svgs/welcome_logo.html", [] %>
+          </div>
+
         </div>
       </div>
     </div>

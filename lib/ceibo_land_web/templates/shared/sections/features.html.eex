@@ -1,17 +1,22 @@
-<div id="feature-section" phx-hook="AnimateOnIntersect" data-threshold="0.05" data-animate-classes="animate__fadeInUp, animate__delay-5s" class="relative bg-white py-16 sm:py-24 lg:py-32">
+<div id="features-section" class="relative <%= @bg_color %> py-16">
   <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-    <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Software Factory</h2>
-    <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-      Todo lo que necesita tu idea
-    </p>
-    <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-      En Caravana ofrecemos un servicio integral para el desarrollo de Software. <br> Desde el diseño y desarrollo del producto hasta su puesta en producción.
-    </p>
+
+    <div id="features_header" phx-hook="AnimateOnIntersect" data-threshold="0.05" data-animate-classes="animate__fadeInUp, opacity-100" class="opacity-0">
+      <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Software Factory</h2>
+      <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+        Todo lo que necesita tu idea
+      </p>
+      <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+        En Caravana ofrecemos un servicio integral para el desarrollo de Software. <br> Desde el diseño y desarrollo del producto hasta su puesta en producción.
+      </p>
+    </div>
+
+
     <div class="mt-12">
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
-        <div id="feature_1" phx-hook="AnimateOnIntersect" data-threshold="0.15" class="<%= if "feature_1" in @animate, do: 'animate__animated animate__zoomIn', else: 'opacity-0'%> pt-6">
-          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+        <div id="feature_1" phx-hook="AnimateOnIntersect" data-threshold="0.15" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 pt-6">
+          <div class="flow-root h-full bg-gray-50 rounded-lg px-6 pb-8">
             <div class="-mt-6">
               <div>
                 <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
@@ -29,8 +34,8 @@
           </div>
         </div>
 
-        <div id="feature_2" phx-hook="AnimateOnIntersect" data-threshold="0.30" class="<%= if "feature_2" in @animate, do: 'animate__animated animate__zoomIn' %> pt-6">
-          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+        <div id="feature_2" phx-hook="AnimateOnIntersect" data-threshold="0.30" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 pt-6">
+          <div class="flow-root h-full bg-gray-50 rounded-lg px-6 pb-8">
             <div class="-mt-6">
               <div>
                 <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
@@ -49,8 +54,8 @@
         </div>
 
 
-        <div id="feature_3" phx-hook="AnimateOnIntersect" data-threshold="0.45" class="<%= if "feature_3" in @animate, do: 'animate__animated animate__zoomIn', else: 'opacity-0'%> pt-6">
-          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+        <div id="feature_3" phx-hook="AnimateOnIntersect" data-threshold="0.45" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 pt-6">
+          <div class="flow-root h-full bg-gray-50 rounded-lg px-6 pb-8">
             <div class="-mt-6">
               <div>
                 <span class="inline-flex items-center justify-center p-2 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
@@ -76,8 +81,8 @@
           </div>
         </div>
 
-        <div id="feature_4" phx-hook="AnimateOnIntersect" data-threshold="0.15" class="<%= if "feature_4" in @animate, do: 'animate__animated animate__zoomIn', else: 'opacity-0'%> pt-6">
-          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+        <div id="feature_4" phx-hook="AnimateOnIntersect" data-threshold="0.15" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 pt-6">
+          <div class="flow-root h-full bg-gray-50 rounded-lg px-6 pb-8">
             <div class="-mt-6">
               <div>
                 <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
@@ -95,8 +100,8 @@
           </div>
         </div>
 
-        <div id="feature_5" phx-hook="AnimateOnIntersect" data-threshold="0.30" class="<%= if "feature_5" in @animate, do: 'animate__animated animate__zoomIn', else: 'opacity-0'%> pt-6">
-          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+        <div id="feature_5" phx-hook="AnimateOnIntersect" data-threshold="0.30" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 pt-6">
+          <div class="flow-root h-full bg-gray-50 rounded-lg px-6 pb-8">
             <div class="-mt-6">
               <div>
                 <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
@@ -115,8 +120,8 @@
           </div>
         </div>
 
-        <div id="feature_6" phx-hook="AnimateOnIntersect" data-threshold="0.45" class="<%= if "feature_6" in @animate, do: 'animate__animated animate__zoomIn', else: 'opacity-0'%> pt-6">
-          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+        <div id="feature_6" phx-hook="AnimateOnIntersect" data-threshold="0.45" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 pt-6">
+          <div class="flow-root h-full bg-gray-50 rounded-lg px-6 pb-8">
             <div class="-mt-6">
               <div>
                 <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
