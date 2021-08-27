@@ -3,7 +3,7 @@ defmodule CeiboLandWeb.PageLive do
 
   @impl true
   def mount(_params, _session, socket) do
-    {:ok, assign(socket, query: "", results: %{}, current_bg_color: "bg-gray-900")}
+    {:ok, assign(socket, query: "", results: %{})}
   end
 
   @impl true
@@ -23,10 +23,6 @@ defmodule CeiboLandWeb.PageLive do
          |> put_flash(:error, "No dependencies found matching \"#{query}\"")
          |> assign(results: %{}, query: query)}
     end
-  end
-
-  def handle_event("animate", %{"element_id" => element_id}, socket) do
-    {:noreply, update(socket, :animate, &([ element_id | &1]))}
   end
 
   def handle_event("create_lead", %{"email" => email}, socket) do
