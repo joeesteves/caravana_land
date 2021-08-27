@@ -26,6 +26,11 @@ config :ceibo_land, CeiboLandWeb.Endpoint,
 # to start each relevant endpoint:
 #
 config :ceibo_land, CeiboLandWeb.Endpoint, server: true
+
+config :ceibo_land,
+  trello_key: System.get_env("TRELLO_KEY"),
+  trello_token: System.get_env("TRELLO_TOKEN"),
+  trello_id_list: System.get_env("TRELLO_LIST_ID")
 #
 # Then you can assemble a release by calling `mix release`.
 # See `mix help release` for more information.

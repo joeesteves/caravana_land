@@ -3,7 +3,7 @@
 // its own CSS file.
 import '../css/app.scss'
 import 'alpinejs'
-// import CodersrankSummary from '@codersrank/summary'
+import CodersrankSummary from '@codersrank/summary/esm/codersrank-summary'
 
 // // register web component as <codersrank-summary> element
 // window.customElements.define('codersrank-summary', CodersrankSummary)
