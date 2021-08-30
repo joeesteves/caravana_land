@@ -1,10 +1,10 @@
-<main>
+<main class="grid">
   <%= render_section("welcome.html", bg_color: "bg-gray-900") %>
   <!-- render_section("portfolio.html", bg_color: "bg-gray-50") -->
   <%= render_section("features.html", bg_color: "bg-white") %>
   <%= render_section("stack.html", bg_color: "bg-gray-50") %>
+  <%= render_section("end.html", bg_color: "bg-gray-900") %>
   <%= render_section("benchmark.html", bg_color: "bg-white") %>
   <%= render_section("testimonials.html", bg_color: "bg-gradient-to-r from-teal-500 to-cyan-600") %>
   <%= render_section("blog.html", bg_color: "bg-gray-50") %>
-  <%= render_section("end.html", bg_color: "bg-gray-900") %>
 </main>
