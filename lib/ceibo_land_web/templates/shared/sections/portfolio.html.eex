@@ -18,7 +18,7 @@
 
           <!-- project 1 -->
           <li class="splide__slide divide-y">
-            <div id="inside_carousel1">
+            <div id="inner_carousel1" phx-hook="InnerCarousel">
                <div class="splide__track">
                   <ul class="splide__list">
 
@@ -28,11 +28,7 @@
                         <div class="flow-root h-full bg-gray-50 rounded-lg">
                           <div class="relative">
                             <div class="absolute -top-2 right-2">
-                              <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                                </svg>
-                              </span>
+                              <%= render_feature_logo("feature_config.html") %>
                             </div>
                             <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 1</h3>
                             <p class="mt-5 text-base text-gray-500 px-4">
@@ -44,11 +40,7 @@
                         <div class="flow-root h-full bg-gray-50 rounded-lg">
                           <div class="relative">
                             <div class="absolute -top-2 right-2">
-                              <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                </svg>
-                              </span>
+                              <%= render_feature_logo("feature_cloud_upload.html") %>
                             </div>
                             <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 2</h3>
                             <p class="mt-5 text-base text-gray-500 px-4">
@@ -65,11 +57,7 @@
                         <div class="flow-root h-full bg-gray-50 rounded-lg">
                           <div class="relative">
                             <div class="absolute -top-2 right-2">
-                              <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                                </svg>
-                              </span>
+                              <%= render_feature_logo("feature_pwa.html") %>
                             </div>
                             <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 3</h3>
                             <p class="mt-5 text-base text-gray-500 px-4">
@@ -81,11 +69,7 @@
                         <div class="flow-root h-full bg-gray-50 rounded-lg">
                           <div class="relative">
                             <div class="absolute -top-2 right-2">
-                              <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                </svg>
-                              </span>
+                              <%= render_feature_logo("feature_lock_closed.html") %>
                             </div>
                             <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 4</h3>
                             <p class="mt-5 text-base text-gray-500 px-4">
@@ -102,11 +86,7 @@
                         <div class="flow-root h-full bg-gray-50 rounded-lg">
                           <div class="relative">
                             <div class="absolute -top-2 right-2">
-                              <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                                </svg>
-                              </span>
+                              <%= render_feature_logo("feature_shield_check.html") %>
                             </div>
                             <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 5</h3>
                             <p class="mt-5 text-base text-gray-500 px-4">
@@ -118,11 +98,7 @@
                         <div class="flow-root h-full bg-gray-50 rounded-lg">
                           <div class="relative">
                             <div class="absolute -top-2 right-2">
-                              <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                </svg>
-                              </span>
+                              <%= render_feature_logo("feature_refresh_or_sync.html") %>
                             </div>
                             <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 6</h3>
                             <p class="mt-5 text-base text-gray-500 px-4">
@@ -152,25 +128,21 @@
 
           <!-- project 2 -->
           <li class="splide__slide divide-y">
-            <div id="inside_carousel2">
+            <div id="inner_carousel2" phx-hook="InnerCarousel">
                <div class="splide__track">
                   <ul class="splide__list">
 
                     <li class="splide__slide flex">
-                      <img class="w-2/3" src="/images/portfolio/cancionero1.png" alt="">
-                      <div class="flex flex-col justify-around space-y-4 items-center p-6">
+                      <img class="sm:w-2/3" src="/images/portfolio/cancionero1.png" alt="">
+                      <div class="hidden sm:flex flex-col justify-around space-y-4 items-center p-6">
                         <div class="flow-root h-full bg-gray-50 rounded-lg">
                           <div class="relative">
                             <div class="absolute -top-2 right-2">
-                              <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                                </svg>
-                              </span>
+                              <%= render_feature_logo("feature_refresh_or_sync.html") %>
                             </div>
-                            <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 1</h3>
+                            <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">APis</h3>
                             <p class="mt-5 text-base text-gray-500 px-4">
-                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae tempora dicta.
+                              Generamos una integración con la API de Meli
                             </p>
                           </div>
                         </div>
@@ -178,11 +150,7 @@
                         <div class="flow-root h-full bg-gray-50 rounded-lg">
                           <div class="relative">
                             <div class="absolute -top-2 right-2">
-                              <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                </svg>
-                              </span>
+                              <%= render_feature_logo("feature_cloud_upload.html") %>
                             </div>
                             <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 2</h3>
                             <p class="mt-5 text-base text-gray-500 px-4">
@@ -194,16 +162,12 @@
                     </li>
 
                     <li class="splide__slide flex">
-                      <img class="w-2/3" src="/images/portfolio/cancionero2.png" alt="">
-                      <div class="flex flex-col justify-around space-y-4 items-center p-6">
+                      <img class="sm:w-2/3" src="/images/portfolio/cancionero2.png" alt="">
+                      <div class="hidden sm:flex flex-col justify-around space-y-4 items-center p-6">
                         <div class="flow-root h-full bg-gray-50 rounded-lg">
                           <div class="relative">
                             <div class="absolute -top-2 right-2">
-                              <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                                </svg>
-                              </span>
+                              <%= render_feature_logo("feature_pwa.html") %>
                             </div>
                             <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 3</h3>
                             <p class="mt-5 text-base text-gray-500 px-4">
@@ -215,11 +179,7 @@
                         <div class="flow-root h-full bg-gray-50 rounded-lg">
                           <div class="relative">
                             <div class="absolute -top-2 right-2">
-                              <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                </svg>
-                              </span>
+                              <%= render_feature_logo("feature_lock_closed.html") %>
                             </div>
                             <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 4</h3>
                             <p class="mt-5 text-base text-gray-500 px-4">
@@ -231,16 +191,12 @@
                     </li>
 
                     <li class="splide__slide flex">
-                      <img class="w-2/3" src="/images/portfolio/cancionero3.png" alt="">
-                      <div class="flex flex-col justify-around space-y-4 items-center p-6">
+                      <img class="sm:w-2/3" src="/images/portfolio/cancionero3.png" alt="">
+                      <div class="hidden sm:flex flex-col justify-around space-y-4 items-center p-6">
                         <div class="flow-root h-full bg-gray-50 rounded-lg">
                           <div class="relative">
                             <div class="absolute -top-2 right-2">
-                              <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                                </svg>
-                              </span>
+                              <%= render_feature_logo("feature_shield_check.html") %>
                             </div>
                             <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 5</h3>
                             <p class="mt-5 text-base text-gray-500 px-4">
@@ -252,11 +208,7 @@
                         <div class="flow-root h-full bg-gray-50 rounded-lg">
                           <div class="relative">
                             <div class="absolute -top-2 right-2">
-                              <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
-                                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                </svg>
-                              </span>
+                              <%= render_feature_logo("feature_refresh_or_sync.html") %>
                             </div>
                             <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 6</h3>
                             <p class="mt-5 text-base text-gray-500 px-4">
@@ -283,7 +235,6 @@
               </div>
             </div>
           </li>
-
 
         </ul>
 
