@@ -39,15 +39,22 @@ Hooks.Carousel = {
         next  : 'splide__arrow--next -mr-2 sm:mr-0',
 
         // Add classes for pagination.
-        pagination: 'splide__pagination bg-gradient-to-r flex justify-end from-teal-500 to-cyan-600 opacity-30 pr-2', // container
-        page      : 'splide__pagination__page', // each button
+        pagination: 'splide__pagination flex justify-end pr-2', // container
+        // page      : 'splide__pagination__page', // each button
       }  
     }).mount();
+  }
+}
 
-    new Splide('#inside_carousel1', {
+Hooks.InnerCarousel = {
+  mounted() {
+    var elementId = '#' + this.el.id
+
+    new Splide(elementId, {
       direction: 'ttb',
       speed: 600,
       type: 'loop',
+
       heightRatio: 0.3,
       perPage: 1,
       drag: true,
@@ -63,69 +70,10 @@ Hooks.Carousel = {
       }
     }).mount();
 
-    new Splide('#inside_carousel2', {
-      direction: 'ttb',
-      speed: 600,
-      type: 'loop',
-      // cover: true, 
-      heightRatio: 0.3,
-      perPage: 1,
-      // gap: '1rem',
-      drag: true,
-      arrows: false,
-      pagination: false,
-      autoplay: true,
-      interval: 5000,
-      // breakpoints: {
-      //   640: {
-      //     perPage: 1,
-      //     heightRatio: 0.75
-      //   }
-      // }
-    }).mount();
-
-    // new Splide('#inside_carousel2', {
-    //   type   : 'loop',
-    //   // cover: true, 
-    //   heightRatio: 0.3,
-    //   perPage: 1,
-    //   // gap: '1rem',
-    //   drag: false,
-    //   arrows: false,
-    //   pagination: false,
-    //   autoplay: true,
-    //   pauseOnHover: true,
-    //   interval: 5000,
-    //   breakpoints: {
-    //     640: {
-    //       perPage: 1,
-    //       heightRatio: 0.75
-    //     }
-    //   }
-    // }).mount();
-
-    // new Splide('#inside_carousel3', {
-    //   type   : 'loop',
-    //   // cover: true, 
-    //   // heightRatio: 0.35,
-    //   perPage: 1,
-    //   // gap: '1rem',
-    //   drag: false,
-    //   arrows: false,
-    //   pagination: false,
-    //   autoplay: true,
-    //   pauseOnHover: true,
-    //   interval: 5000,
-    //   breakpoints: {
-    //     640: {
-    //       perPage: 1,
-    //       heightRatio: 0.75
-    //     }
-    //   }
-    // }).mount();
-
   }
+
 }
+
 
 Hooks.AnimateOnIntersect = {
   mounted() {

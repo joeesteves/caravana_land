@@ -99,6 +99,17 @@ input {
   margin: -1rem 0 2rem;
 }
 
+
+// to hide iframe at the end of liveview page
 iframe[src="/phoenix/live_reload/frame"] {
   display: none;
 }
+
+// Carousel button styling...
+.splide__pagination__page {
+   background:rgb(155, 153, 153);
+  }
+.splide__pagination__page.is-active {
+  transform: scale(1.4); 
+  background: rgba(8, 145, 178, 1);
+  }
