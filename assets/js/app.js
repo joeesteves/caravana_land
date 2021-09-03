@@ -5,6 +5,7 @@ import '../css/app.scss'
 import 'alpinejs'
 import CodersrankSummary from '@codersrank/summary/esm/codersrank-summary'
 
+
 // // register web component as <codersrank-summary> element
 // window.customElements.define('codersrank-summary', CodersrankSummary)
 
@@ -22,50 +23,57 @@ import { Socket } from 'phoenix'
 import NProgress from 'nprogress'
 import { LiveSocket } from 'phoenix_live_view'
 
+
 let Hooks = {}
 
-//  Carousel JS logic
+
 Hooks.Carousel = {
   mounted() {
-    window.carouselHook = this
-    var slideIndex = 2
-    showSlides(slideIndex)
+    new Splide('#portfolio_carousel', {
+      drag: true,
+      classes: {
+        // Add classes for arrows.
+        arrows: 'splide__arrows',
+        arrow : 'splide__arrow',
+        prev  : 'splide__arrow--prev -ml-2 sm:ml-0',
+        next  : 'splide__arrow--next -mr-2 sm:mr-0',
 
-    // Next/previous controls
-    function plusSlides(n) {
-      showSlides((slideIndex += n))
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides((slideIndex = n))
-    }
-
-    function showSlides(n) {
-      var i
-      var slides = document.getElementsByClassName('mySlides')
-      var dots = document.getElementsByClassName('dot')
-      if (n > slides.length) {
-        slideIndex = 1
-      }
-      if (n < 1) {
-        slideIndex = slides.length
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none'
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(' active', '')
-      }
-      slides[slideIndex - 1].style.display = 'block'
-      dots[slideIndex - 1].className += ' active'
-    }
-  },
-  plusSlides(n) {
-    console.log(n)
-    showSlides((slideIndex += n))
-  },
+        // Add classes for pagination.
+        pagination: 'splide__pagination flex justify-end pr-2', // container
+        // page      : 'splide__pagination__page', // each button
+      }  
+    }).mount();
+  }
 }
+
+Hooks.InnerCarousel = {
+  mounted() {
+    var elementId = '#' + this.el.id
+
+    new Splide(elementId, {
+      direction: 'ttb',
+      speed: 600,
+      type: 'loop',
+
+      heightRatio: 0.3,
+      perPage: 1,
+      drag: true,
+      arrows: false,
+      pagination: false,
+      autoplay: true,
+      interval: 5000,
+      easing: 'ease',
+      breakpoints: {
+        640: {
+          heightRatio: 0.5
+        }
+      }
+    }).mount();
+
+  }
+
+}
+
 
 Hooks.AnimateOnIntersect = {
   mounted() {

@@ -100,8 +100,3 @@ header nav a {
   }
 }
 
-iframe[src="/phoenix/live_reload/frame"] {
-  display: none;
-}
-
-
