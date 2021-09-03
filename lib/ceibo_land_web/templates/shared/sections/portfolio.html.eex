@@ -1,8 +1,15 @@
 <div id="portfolio" class="relative <%= @bg_color %> py-16">
   <div class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
-
-    <div id="porfolio_header" phx-hook="AnimateOnIntersect" data-threshold="0.05" data-animate-classes="animate__fadeInUp, opacity-100" class="opacity-0">
-      <h2 class="text-base bg-gree font-semibold tracking-wider text-cyan-600 uppercase">Portfolio</h2>
+    <div
+      id="porfolio_header"
+      phx-hook="AnimateOnIntersect"
+      data-threshold="0.05"
+      data-animate-classes="animate__fadeInUp, opacity-100"
+      class="opacity-0"
+    >
+      <h2 class="text-base bg-gree font-semibold tracking-wider text-cyan-600 uppercase">
+        Portfolio
+      </h2>
       <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
         Nuestros últimos trabajos
       </p>
@@ -11,23 +18,40 @@
       </p>
     </div>
 
-    <div id="portfolio_carousel" phx-hook="Carousel" x-data="{}" class="flex flex-col overflow-y-hidden max-h-80 mt-12">
+    <div
+      id="portfolio_carousel"
+      phx-hook="Carousel"
+      x-data="{}"
+      class="flex flex-col overflow-y-hidden max-h-80 mt-12"
+    >
       <div class="mySlides fade">
-        <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5" src="/images/tu_libreria.png" alt="">
+        <img
+          class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
+          src="/images/tu_libreria.png"
+          alt=""
+        />
       </div>
 
       <div class="mySlides fade">
-        <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5" src="https://tailwindui.com/img/component-images/green-project-app-screenshot.jpg" alt="">
+        <img
+          class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
+          src="https://tailwindui.com/img/component-images/green-project-app-screenshot.jpg"
+          alt=""
+        />
       </div>
 
       <div class="mySlides fade">
-        <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5" src="/images/tu_libreria.png" alt="">
+        <img
+          class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
+          src="/images/tu_libreria.png"
+          alt=""
+        />
       </div>
 
       <!-- Next and previous buttons -->
       <a class="prev" @click="carouselHook.plusSlides(-1)">&#10094;</a>
       <a class="next" @click="carouselHook.plusSlides(1)">&#10095;</a>
-            <!-- The dots/circles -->
+      <!-- The dots/circles -->
       <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>

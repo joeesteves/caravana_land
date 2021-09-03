@@ -1,52 +1,114 @@
 <div id="benchmark" class="relative <%= @bg_color %> py-16">
   <div class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
-
-    <div id="benchmark_header" phx-hook="AnimateOnIntersect" data-threshold="0.05" data-animate-classes="animate__fadeInUp, opacity-100" class="opacity-0">
+    <div
+      id="benchmark_header"
+      phx-hook="AnimateOnIntersect"
+      data-threshold="0.05"
+      data-animate-classes="animate__fadeInUp, opacity-100"
+      class="opacity-0"
+    >
       <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Benchmark</h2>
       <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
         Nunca escuché sobre Elixir... ¿es confiable?
       </p>
       <p class="mt-5 sm:max-w-prose mx-auto text-xl text-gray-500">
         Las <b>mejores compañías del mundo</b> basan sus productos en éste lenguaje de programación.
-        <br>
-        Sin Elixir les sería imposible sostener los servidores funcionando correctamente dando servicio a <b>millones de usuarios en simultáneo!</b>
+        <br />
+        Sin Elixir les sería imposible sostener los servidores funcionando correctamente dando
+        servicio a <b>millones de usuarios en simultáneo!</b>
       </p>
 
-      <p class="sm:hidden mt-4 mx-auto text-sm text-gray-500">
-        *Click para más info
-      </p>
+      <p class="sm:hidden mt-4 mx-auto text-sm text-gray-500">*Click para más info</p>
     </div>
 
     <!-- mobile logos -->
-    <div id="benchmark_logos_mobile" x-data="{ show_icons: 'all' }" class="sm:hidden flex flex-wrap justify-center mt-8">
-
-      <div x-show="show_icons === 'wapp' || show_icons === 'all'" @click="show_icons = (show_icons === 'wapp' ? 'all' : 'wapp')" id="logo_1_mobile" phx-hook="AnimateOnIntersect" data-threshold="0.05" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 flex flex-col items-center justify-center rounded-lg shadow-xl mx-4 my-2">
-        <img class="p-4 h-32" src="/images/whatsapp-logo.webp" alt="">
+    <div
+      id="benchmark_logos_mobile"
+      x-data="{ show_icons: 'all' }"
+      class="sm:hidden flex flex-wrap justify-center mt-8"
+    >
+      <div
+        x-show="show_icons === 'wapp' || show_icons === 'all'"
+        @click="show_icons = (show_icons === 'wapp' ? 'all' : 'wapp')"
+        id="logo_1_mobile"
+        phx-hook="AnimateOnIntersect"
+        data-threshold="0.05"
+        data-animate-classes="animate__zoomIn, opacity-100"
+        class="opacity-0 flex flex-col items-center justify-center rounded-lg shadow-xl mx-4 my-2"
+      >
+        <img class="p-4 h-32" src="/images/whatsapp-logo.webp" alt="" />
         <p x-show="show_icons === 'wapp'" class="p-6 mx-auto text-lg text-justify text-gray-500">
-          <b>WhatsApp</b> fue adquirido por Facebook en 2014 por $USD 19 billones. Provee servicios de mensajería a más de 1 billón de personas alrededor del mundo, y hacen esto con un equipo realmente chico. Con 50 ingenieros administraban en 2015 alrededor de 900 millones de usuarios. Cómo lo lograron? Así es... toda su aplicación fue desarrollada en Erlang, que es compilado en el mismo bytecode que Elixir.
+          <b>WhatsApp</b> fue adquirido por Facebook en 2014 por $USD 19 billones. Provee servicios
+          de mensajería a más de 1 billón de personas alrededor del mundo, y hacen esto con un
+          equipo realmente chico. Con 50 ingenieros administraban en 2015 alrededor de 900 millones
+          de usuarios. Cómo lo lograron? Así es... toda su aplicación fue desarrollada en Erlang,
+          que es compilado en el mismo bytecode que Elixir.
         </p>
       </div>
 
-      <div x-show="show_icons === 'pinterest' || show_icons === 'all'" @click="show_icons = (show_icons === 'pinterest' ? 'all' : 'pinterest')" id="logo_2_mobile" phx-hook="AnimateOnIntersect" data-threshold="0.25" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 flex flex-col items-center justify-center rounded-lg shadow-xl mx-4 my-2">
-        <img class="p-5 h-32" src="/images/pinterest-logo.png" alt="">
-        <p x-show="show_icons === 'pinterest'" class="p-6 mx-auto text-lg text-justify text-gray-500">
-          <b>Pinterest</b> es una gran red social que se basa en "pins", por ejemplo, videos o imágenes que pueden inspirar y motivar a las personas. Pinterest tiene más de 150 millones de usuarios mensuales, y usan Elixir para gestionar su <b>sistema de notificaciones</b>. Así, reportaron una reducción en su código de 10mil líneas a tan sólo mil <b>reduciendo los requerimientos del servidor a la mitad!</b>
+      <div
+        x-show="show_icons === 'pinterest' || show_icons === 'all'"
+        @click="show_icons = (show_icons === 'pinterest' ? 'all' : 'pinterest')"
+        id="logo_2_mobile"
+        phx-hook="AnimateOnIntersect"
+        data-threshold="0.25"
+        data-animate-classes="animate__zoomIn, opacity-100"
+        class="opacity-0 flex flex-col items-center justify-center rounded-lg shadow-xl mx-4 my-2"
+      >
+        <img class="p-5 h-32" src="/images/pinterest-logo.png" alt="" />
+        <p
+          x-show="show_icons === 'pinterest'"
+          class="p-6 mx-auto text-lg text-justify text-gray-500"
+        >
+          <b>Pinterest</b> es una gran red social que se basa en "pins", por ejemplo, videos o
+          imágenes que pueden inspirar y motivar a las personas. Pinterest tiene más de 150 millones
+          de usuarios mensuales, y usan Elixir para gestionar su <b>sistema de notificaciones</b>.
+          Así, reportaron una reducción en su código de 10mil líneas a tan sólo mil
+          <b>reduciendo los requerimientos del servidor a la mitad!</b>
         </p>
       </div>
 
-      <div x-show="show_icons === 'discord' || show_icons === 'all'" @click="show_icons = (show_icons === 'discord' ? 'all' : 'discord')" id="logo_3_mobile" phx-hook="AnimateOnIntersect" data-threshold="0.05" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 flex flex-col items-center justify-center rounded-lg shadow-xl mx-4 my-2">
-        <img class="p-4 h-32" src="/images/discord-logo.png" alt="">
+      <div
+        x-show="show_icons === 'discord' || show_icons === 'all'"
+        @click="show_icons = (show_icons === 'discord' ? 'all' : 'discord')"
+        id="logo_3_mobile"
+        phx-hook="AnimateOnIntersect"
+        data-threshold="0.05"
+        data-animate-classes="animate__zoomIn, opacity-100"
+        class="opacity-0 flex flex-col items-center justify-center rounded-lg shadow-xl mx-4 my-2"
+      >
+        <img class="p-4 h-32" src="/images/discord-logo.png" alt="" />
         <p x-show="show_icons === 'discord'" class="p-6 mx-auto text-lg text-justify text-gray-500">
-          <b>Discord</b> es una aplicación VoIP utilizada principalmente por <i>gamers</i> que permite mensajería de voz, texto y video. Mensualmente lo utilizan <b>56 millones de usuarios</b>, habiéndose registrado picos de 10,6 millones de usuarios en simultáneo! BEAM (la VM de Erlang sobre la que se basa Elixir) resultó fundamental para crear el servicio web escalable y concurrente
+          <b>Discord</b> es una aplicación VoIP utilizada principalmente por <i>gamers</i> que
+          permite mensajería de voz, texto y video. Mensualmente lo utilizan
+          <b>56 millones de usuarios</b>, habiéndose registrado picos de 10,6 millones de usuarios
+          en simultáneo! BEAM (la VM de Erlang sobre la que se basa Elixir) resultó fundamental para
+          crear el servicio web escalable y concurrente
         </p>
       </div>
 
-      <div x-show="show_icons === 'spotify' || show_icons === 'all'" @click="show_icons = (show_icons === 'spotify' ? 'all' : 'spotify')" id="logo_4_mobile" phx-hook="AnimateOnIntersect" data-threshold="0.25" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 flex flex-col items-center justify-center rounded-lg shadow-xl mx-4 my-2">
-        <img class="p-4 h-32" src="/images/spotify-logo.png" alt="">
+      <div
+        x-show="show_icons === 'spotify' || show_icons === 'all'"
+        @click="show_icons = (show_icons === 'spotify' ? 'all' : 'spotify')"
+        id="logo_4_mobile"
+        phx-hook="AnimateOnIntersect"
+        data-threshold="0.25"
+        data-animate-classes="animate__zoomIn, opacity-100"
+        class="opacity-0 flex flex-col items-center justify-center rounded-lg shadow-xl mx-4 my-2"
+      >
+        <img class="p-4 h-32" src="/images/spotify-logo.png" alt="" />
         <p x-show="show_icons === 'spotify'" class="p-6 mx-auto text-lg text-justify text-gray-500">
-          <b>Spotify</b> es un servicio de reproducción de música, podcasts y videos via streaming. Lo usan <b>365 millones de usuarios por mes!</b>. Joel Kemp, Spotify Staff Software Engineer, explica cómo Elixir ayudó a su equipo y a él a resolver problemas de concurrencia en su base de datos. Elixir resultó clave para lograr la solución!
-        <br>
-        <a href="https://open.spotify.com/episode/33YS3y1WvFqECfOv0zNAsj" class="hover:underline text-sm" target="_blank">Escucha su testimonio en el podcast de Spotify</a>
+          <b>Spotify</b> es un servicio de reproducción de música, podcasts y videos via streaming.
+          Lo usan <b>365 millones de usuarios por mes!</b>. Joel Kemp, Spotify Staff Software
+          Engineer, explica cómo Elixir ayudó a su equipo y a él a resolver problemas de
+          concurrencia en su base de datos. Elixir resultó clave para lograr la solución!
+          <br />
+          <a
+            href="https://open.spotify.com/episode/33YS3y1WvFqECfOv0zNAsj"
+            class="hover:underline text-sm"
+            target="_blank"
+            >Escucha su testimonio en el podcast de Spotify</a
+          >
         </p>
       </div>
     </div>
@@ -54,37 +116,79 @@
     <!-- PC logos -->
 
     <div id="benchmark_logos_pc" class="hidden sm:flex flex-wrap justify-center items-start mt-8">
-
-      <div id="logo_1" phx-hook="AnimateOnIntersect" data-threshold="0.05" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 sm:w-5/12 sm:m-4 flex flex-col items-center justify-center rounded-lg shadow-xl transition duration-700 ease-in-out transform hover:scale-105">
-        <img class="p-4 h-32" src="/images/whatsapp-logo.webp" alt="">
+      <div
+        id="logo_1"
+        phx-hook="AnimateOnIntersect"
+        data-threshold="0.05"
+        data-animate-classes="animate__zoomIn, opacity-100"
+        class="opacity-0 sm:w-5/12 sm:m-4 flex flex-col items-center justify-center rounded-lg shadow-xl transition duration-700 ease-in-out transform hover:scale-105"
+      >
+        <img class="p-4 h-32" src="/images/whatsapp-logo.webp" alt="" />
         <p class="p-6 mx-auto text-lg text-justify text-gray-500">
-          <b>WhatsApp</b> fue adquirido por Facebook en 2014 por $USD 19 billones. Provee servicios de mensajería a más de 1 billón de personas alrededor del mundo, y hacen esto con un equipo realmente chico. Con 50 ingenieros administraban en 2015 alrededor de 900 millones de usuarios. Cómo lo lograron? Así es... toda su aplicación fue desarrollada en Erlang, que es compilado en el mismo bytecode que Elixir.
+          <b>WhatsApp</b> fue adquirido por Facebook en 2014 por $USD 19 billones. Provee servicios
+          de mensajería a más de 1 billón de personas alrededor del mundo, y hacen esto con un
+          equipo realmente chico. Con 50 ingenieros administraban en 2015 alrededor de 900 millones
+          de usuarios. Cómo lo lograron? Así es... toda su aplicación fue desarrollada en Erlang,
+          que es compilado en el mismo bytecode que Elixir.
         </p>
       </div>
 
-      <div id="logo_2" phx-hook="AnimateOnIntersect" data-threshold="0.25" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 sm:w-5/12 sm:m-4 flex flex-col items-center justify-center rounded-lg shadow-xl transition duration-700 ease-in-out transform hover:scale-105">
-        <img class="p-5 h-32" src="/images/pinterest-logo.png" alt="">
+      <div
+        id="logo_2"
+        phx-hook="AnimateOnIntersect"
+        data-threshold="0.25"
+        data-animate-classes="animate__zoomIn, opacity-100"
+        class="opacity-0 sm:w-5/12 sm:m-4 flex flex-col items-center justify-center rounded-lg shadow-xl transition duration-700 ease-in-out transform hover:scale-105"
+      >
+        <img class="p-5 h-32" src="/images/pinterest-logo.png" alt="" />
         <p class="p-6 mx-auto text-lg text-justify text-gray-500">
-          <b>Pinterest</b> es una gran red social que se basa en "pins", por ejemplo, videos o imágenes que pueden inspirar y motivar a las personas. Pinterest tiene más de 150 millones de usuarios mensuales, y usan Elixir para gestionar su <b>sistema de notificaciones</b>. Así, reportaron una reducción en su código de 10mil líneas a tan sólo mil <b>reduciendo los requerimientos del servidor a la mitad!</b>
+          <b>Pinterest</b> es una gran red social que se basa en "pins", por ejemplo, videos o
+          imágenes que pueden inspirar y motivar a las personas. Pinterest tiene más de 150 millones
+          de usuarios mensuales, y usan Elixir para gestionar su <b>sistema de notificaciones</b>.
+          Así, reportaron una reducción en su código de 10mil líneas a tan sólo mil
+          <b>reduciendo los requerimientos del servidor a la mitad!</b>
         </p>
       </div>
 
-      <div id="logo_3" phx-hook="AnimateOnIntersect" data-threshold="0.05" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 sm:w-5/12 sm:m-4 flex flex-col items-center justify-center rounded-lg shadow-xl transition duration-700 ease-in-out transform hover:scale-105">
-        <img class="p-4 h-32" src="/images/discord-logo.png" alt="">
+      <div
+        id="logo_3"
+        phx-hook="AnimateOnIntersect"
+        data-threshold="0.05"
+        data-animate-classes="animate__zoomIn, opacity-100"
+        class="opacity-0 sm:w-5/12 sm:m-4 flex flex-col items-center justify-center rounded-lg shadow-xl transition duration-700 ease-in-out transform hover:scale-105"
+      >
+        <img class="p-4 h-32" src="/images/discord-logo.png" alt="" />
         <p class="p-6 mx-auto text-lg text-justify text-gray-500">
-          <b>Discord</b> es una aplicación VoIP utilizada principalmente por <i>gamers</i> que permite mensajería de voz, texto y video. Mensualmente lo utilizan <b>56 millones de usuarios</b>, habiéndose registrado picos de 10,6 millones de usuarios en simultáneo! BEAM (la VM de Erlang sobre la que se basa Elixir) resultó fundamental para crear el servicio web escalable y concurrente
+          <b>Discord</b> es una aplicación VoIP utilizada principalmente por <i>gamers</i> que
+          permite mensajería de voz, texto y video. Mensualmente lo utilizan
+          <b>56 millones de usuarios</b>, habiéndose registrado picos de 10,6 millones de usuarios
+          en simultáneo! BEAM (la VM de Erlang sobre la que se basa Elixir) resultó fundamental para
+          crear el servicio web escalable y concurrente
         </p>
       </div>
 
-      <div id="logo_4" phx-hook="AnimateOnIntersect" data-threshold="0.25" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 sm:w-5/12 sm:m-4 flex flex-col items-center justify-center rounded-lg shadow-xl transition duration-700 ease-in-out transform hover:scale-105">
-        <img class="p-4 h-32" src="/images/spotify-logo.png" alt="">
+      <div
+        id="logo_4"
+        phx-hook="AnimateOnIntersect"
+        data-threshold="0.25"
+        data-animate-classes="animate__zoomIn, opacity-100"
+        class="opacity-0 sm:w-5/12 sm:m-4 flex flex-col items-center justify-center rounded-lg shadow-xl transition duration-700 ease-in-out transform hover:scale-105"
+      >
+        <img class="p-4 h-32" src="/images/spotify-logo.png" alt="" />
         <p class="p-6 mx-auto text-lg text-justify text-gray-500">
-          <b>Spotify</b> es un servicio de reproducción de música, podcasts y videos via streaming. Lo usan <b>365 millones de usuarios por mes!</b>. Joel Kemp, Spotify Staff Software Engineer, explica cómo Elixir ayudó a su equipo y a él a resolver problemas de concurrencia en su base de datos. Elixir resultó clave para lograr la solución!
-        <br>
-        <a href="https://open.spotify.com/episode/33YS3y1WvFqECfOv0zNAsj" class="hover:underline text-sm" target="_blank">Escucha su testimonio en el podcast de Spotify</a>
+          <b>Spotify</b> es un servicio de reproducción de música, podcasts y videos via streaming.
+          Lo usan <b>365 millones de usuarios por mes!</b>. Joel Kemp, Spotify Staff Software
+          Engineer, explica cómo Elixir ayudó a su equipo y a él a resolver problemas de
+          concurrencia en su base de datos. Elixir resultó clave para lograr la solución!
+          <br />
+          <a
+            href="https://open.spotify.com/episode/33YS3y1WvFqECfOv0zNAsj"
+            class="hover:underline text-sm"
+            target="_blank"
+            >Escucha su testimonio en el podcast de Spotify</a
+          >
         </p>
       </div>
     </div>
-
   </div>
 </div>

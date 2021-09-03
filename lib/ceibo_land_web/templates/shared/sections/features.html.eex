@@ -1,139 +1,291 @@
 <div id="features-section" class="relative <%= @bg_color %> py-16">
   <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-
-    <div id="features_header" phx-hook="AnimateOnIntersect" data-threshold="0.05" data-animate-classes="animate__fadeInUp, opacity-100" class="opacity-0">
-      <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Software Factory</h2>
+    <div
+      id="features_header"
+      phx-hook="AnimateOnIntersect"
+      data-threshold="0.05"
+      data-animate-classes="animate__fadeInUp, opacity-100"
+      class="opacity-0"
+    >
+      <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">
+        Software Factory
+      </h2>
       <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
         Todo lo que necesita tu idea
       </p>
       <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-        En Caravana ofrecemos un servicio integral para el desarrollo de Software. <br> Desde el diseño y desarrollo del producto hasta su puesta en producción.
+        En Caravana ofrecemos un servicio integral para el desarrollo de Software. <br />
+        Desde el diseño y desarrollo del producto hasta su puesta en producción.
       </p>
     </div>
 
-
     <div class="mt-12">
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-
-        <div id="feature_1" phx-hook="AnimateOnIntersect" data-threshold="0.15" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 pt-6">
+        <div
+          id="feature_1"
+          phx-hook="AnimateOnIntersect"
+          data-threshold="0.15"
+          data-animate-classes="animate__zoomIn, opacity-100"
+          class="opacity-0 pt-6"
+        >
           <div class="flow-root h-full bg-gray-50 rounded-lg px-6 pb-8">
             <div class="-mt-6">
               <div>
-                <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                <span
+                  class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                >
                   <!-- Heroicon name: outline/cloud-upload -->
-                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                  <svg
+                    class="h-6 w-6 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                    />
                   </svg>
                 </span>
               </div>
               <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Push to Deploy</h3>
               <p class="mt-5 text-base text-gray-500">
-                Nuestra infraestructura es 100% cloud, lo que reducirá tus costos sin sacrificar la performance.
+                Nuestra infraestructura es 100% cloud, lo que reducirá tus costos sin sacrificar la
+                performance.
               </p>
             </div>
           </div>
         </div>
 
-        <div id="feature_2" phx-hook="AnimateOnIntersect" data-threshold="0.30" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 pt-6">
+        <div
+          id="feature_2"
+          phx-hook="AnimateOnIntersect"
+          data-threshold="0.30"
+          data-animate-classes="animate__zoomIn, opacity-100"
+          class="opacity-0 pt-6"
+        >
           <div class="flow-root h-full bg-gray-50 rounded-lg px-6 pb-8">
             <div class="-mt-6">
               <div>
-                <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                <span
+                  class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                >
                   <!-- Heroicon name: outline/lock-closed -->
-                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  <svg
+                    class="h-6 w-6 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                    />
                   </svg>
                 </span>
               </div>
-              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Certificados SSL</h3>
+              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                Certificados SSL
+              </h3>
               <p class="mt-5 text-base text-gray-500">
-                Permiten una conexión bajo el protocolo https garantizando una conexión segura desde el servidor hasta el navegador.
+                Permiten una conexión bajo el protocolo https garantizando una conexión segura desde
+                el servidor hasta el navegador.
               </p>
             </div>
           </div>
         </div>
 
-
-        <div id="feature_3" phx-hook="AnimateOnIntersect" data-threshold="0.45" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 pt-6">
+        <div
+          id="feature_3"
+          phx-hook="AnimateOnIntersect"
+          data-threshold="0.45"
+          data-animate-classes="animate__zoomIn, opacity-100"
+          class="opacity-0 pt-6"
+        >
           <div class="flow-root h-full bg-gray-50 rounded-lg px-6 pb-8">
             <div class="-mt-6">
               <div>
-                <span class="inline-flex items-center justify-center p-2 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                <span
+                  class="inline-flex items-center justify-center p-2 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                >
                   <!-- Heroicon name: outline/refresh -->
-                  <svg class="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 978 388" stroke="currentColor" aria-hidden="true">
+                  <svg
+                    class="h-8 w-8 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="white"
+                    viewBox="0 0 978 388"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
                     <g transform="matrix(7.83465,0,0,7.83465,-398.586,-488.321)">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M142.662,103.442L146.265,94.331L156.668,94.331L151.73,80.51L157.905,64.896L175.59,111.852L162.548,111.852L159.526,103.442L142.662,103.442Z"/>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M142.662,103.442L146.265,94.331L156.668,94.331L151.73,80.51L157.905,64.896L175.59,111.852L162.548,111.852L159.526,103.442L142.662,103.442Z"
+                      />
                     </g>
                     <g transform="matrix(7.83465,0,0,7.83465,-398.586,-488.321)">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M131.535,109.284L150.467,62.328L137.916,62.329L124.965,92.673L115.755,62.329L106.108,62.329L96.22,92.673L89.246,78.845L82.935,98.288L89.343,109.284L101.695,109.284L110.631,82.072L119.15,109.284L131.535,109.284Z"/>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M131.535,109.284L150.467,62.328L137.916,62.329L124.965,92.673L115.755,62.329L106.108,62.329L96.22,92.673L89.246,78.845L82.935,98.288L89.343,109.284L101.695,109.284L110.631,82.072L119.15,109.284L131.535,109.284Z"
+                      />
                     </g>
                     <g transform="matrix(7.83465,0,0,7.83465,-398.586,-488.321)">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M62.789,93.166L70.52,93.166C72.862,93.166 74.947,92.905 76.776,92.382L78.775,86.223L84.363,69.007C83.938,68.333 83.452,67.694 82.905,67.093C80.036,63.917 75.838,62.33 70.312,62.33L50.875,62.33L50.875,109.286L62.789,109.286L62.789,93.166ZM73.022,73.132C74.143,74.26 74.703,75.77 74.703,77.66C74.703,79.566 74.21,81.077 73.225,82.194C72.144,83.435 70.155,84.056 67.257,84.056L62.789,84.056L62.789,71.441L67.29,71.441C69.991,71.441 71.902,72.004 73.022,73.132Z"/>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M62.789,93.166L70.52,93.166C72.862,93.166 74.947,92.905 76.776,92.382L78.775,86.223L84.363,69.007C83.938,68.333 83.452,67.694 82.905,67.093C80.036,63.917 75.838,62.33 70.312,62.33L50.875,62.33L50.875,109.286L62.789,109.286L62.789,93.166ZM73.022,73.132C74.143,74.26 74.703,75.77 74.703,77.66C74.703,79.566 74.21,81.077 73.225,82.194C72.144,83.435 70.155,84.056 67.257,84.056L62.789,84.056L62.789,71.441L67.29,71.441C69.991,71.441 71.902,72.004 73.022,73.132Z"
+                      />
                     </g>
                   </svg>
                 </span>
               </div>
-              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Progressive Web App</h3>
+              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                Progressive Web App
+              </h3>
               <p class="mt-5 text-base text-gray-500">
-                Las PWA reúnen lo mejor de las aplicaciones web y de las nativas, incluso son consideradas una evolución de las mismas
+                Las PWA reúnen lo mejor de las aplicaciones web y de las nativas, incluso son
+                consideradas una evolución de las mismas
               </p>
             </div>
           </div>
         </div>
 
-        <div id="feature_4" phx-hook="AnimateOnIntersect" data-threshold="0.15" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 pt-6">
+        <div
+          id="feature_4"
+          phx-hook="AnimateOnIntersect"
+          data-threshold="0.15"
+          data-animate-classes="animate__zoomIn, opacity-100"
+          class="opacity-0 pt-6"
+        >
           <div class="flow-root h-full bg-gray-50 rounded-lg px-6 pb-8">
             <div class="-mt-6">
               <div>
-                <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                <span
+                  class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                >
                   <!-- Heroicon name: outline/shield-check -->
-                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  <svg
+                    class="h-6 w-6 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
                   </svg>
                 </span>
               </div>
               <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">100% Online</h3>
               <p class="mt-5 text-base text-gray-500">
-                Elixir nos permite garantizar que tu app va a estar siempre funcional gracias a su sistema integrado de supervisión.
+                Elixir nos permite garantizar que tu app va a estar siempre funcional gracias a su
+                sistema integrado de supervisión.
               </p>
             </div>
           </div>
         </div>
 
-        <div id="feature_5" phx-hook="AnimateOnIntersect" data-threshold="0.30" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 pt-6">
+        <div
+          id="feature_5"
+          phx-hook="AnimateOnIntersect"
+          data-threshold="0.30"
+          data-animate-classes="animate__zoomIn, opacity-100"
+          class="opacity-0 pt-6"
+        >
           <div class="flow-root h-full bg-gray-50 rounded-lg px-6 pb-8">
             <div class="-mt-6">
               <div>
-                <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                <span
+                  class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                >
                   <!-- Heroicon name: outline/cog -->
-                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <svg
+                    class="h-6 w-6 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
                   </svg>
                 </span>
               </div>
-              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Desarrollo de APIs</h3>
+              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                Desarrollo de APIs
+              </h3>
               <p class="mt-5 text-base text-gray-500">
-                Tu app no estará "aislada". La integración mediante APIs te permitirá sincronizar e integrar múltiples fuentes de información.
+                Tu app no estará "aislada". La integración mediante APIs te permitirá sincronizar e
+                integrar múltiples fuentes de información.
               </p>
             </div>
           </div>
         </div>
 
-        <div id="feature_6" phx-hook="AnimateOnIntersect" data-threshold="0.45" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 pt-6">
+        <div
+          id="feature_6"
+          phx-hook="AnimateOnIntersect"
+          data-threshold="0.45"
+          data-animate-classes="animate__zoomIn, opacity-100"
+          class="opacity-0 pt-6"
+        >
           <div class="flow-root h-full bg-gray-50 rounded-lg px-6 pb-8">
             <div class="-mt-6">
               <div>
-                <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                <span
+                  class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg"
+                >
                   <!-- Heroicon name: outline/server -->
-                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                  <svg
+                    class="h-6 w-6 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
+                    />
                   </svg>
                 </span>
               </div>
               <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Bases de Datos</h3>
               <p class="mt-5 text-base text-gray-500">
-                Las DB son los activos más importantes. Por eso garantizamos backups programados automáticamente.
+                Las DB son los activos más importantes. Por eso garantizamos backups programados
+                automáticamente.
               </p>
             </div>
           </div>
