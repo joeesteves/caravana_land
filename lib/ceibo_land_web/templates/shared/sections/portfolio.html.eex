@@ -1,4 +1,4 @@
-<div id="portfolio" class="relative <%= @bg_color %> py-16">
+<section id="portfolio" class="relative <%= @bg_color %> py-20">
   <div class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
 
     <div id="porfolio_header" phx-hook="AnimateOnIntersect" data-threshold="0.05" data-animate-classes="animate__fadeInUp, opacity-100" class="opacity-0">
@@ -242,4 +242,4 @@
     </div>
 
   </div>
-</div>
+</section>
