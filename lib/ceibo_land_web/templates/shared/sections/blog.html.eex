@@ -1,21 +1,38 @@
 <section id="blog" class="relative <%= @bg_color %> py-20">
   <div class="relative">
-
-    <div id="blog_header" phx-hook="AnimateOnIntersect" data-threshold="0.05" data-animate-classes="animate__fadeInUp, opacity-100" class="opacity-0 text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+    <div
+      id="blog_header"
+      phx-hook="AnimateOnIntersect"
+      data-threshold="0.05"
+      data-animate-classes="animate__fadeInUp, opacity-100"
+      class="opacity-0 text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl"
+    >
       <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Capacitate</h2>
       <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
         Recursos Útiles
       </p>
       <p class="mt-5 mx-auto max-w-prose text-xl text-gray-500">
-        Somos amantes del STACK que usamos. Si te interesa conocer más, te recomendamos los siguientes artículos
+        Somos amantes del STACK que usamos. Si te interesa conocer más, te recomendamos los
+        siguientes artículos
       </p>
     </div>
 
-    <div class="mt-12 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl">
-
-      <div id="blog_article_1" phx-hook="AnimateOnIntersect" data-threshold="0.15" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 flex flex-col rounded-lg shadow-lg overflow-hidden">
+    <div
+      class="mt-12 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl"
+    >
+      <div
+        id="blog_article_1"
+        phx-hook="AnimateOnIntersect"
+        data-threshold="0.15"
+        data-animate-classes="animate__zoomIn, opacity-100"
+        class="opacity-0 flex flex-col rounded-lg shadow-lg overflow-hidden"
+      >
         <div class="flex-shrink-0">
-          <img class="h-48 w-full object-cover" src="https://joanleon.dev/static/b1d73a3f837b55ed97ae7641de0c86bf/7d769/TailwindCSS.png" alt="">
+          <img
+            class="h-48 w-full object-cover"
+            src="https://joanleon.dev/static/b1d73a3f837b55ed97ae7641de0c86bf/7d769/TailwindCSS.png"
+            alt=""
+          />
         </div>
         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
           <div class="flex-1">
@@ -25,11 +42,12 @@
               </a>
             </p>
             <a href="https://joanleon.dev/tailwindcss" target="_blank" class="block mt-2">
-              <p class="text-xl font-semibold text-gray-900">
-                Mi opinión sobre Tailwind CSS
-              </p>
+              <p class="text-xl font-semibold text-gray-900">Mi opinión sobre Tailwind CSS</p>
               <p class="mt-3 text-base text-justify text-gray-500">
-                Los frameworks CSS basados en el patrón "Utility-First" están ganando mucha tracción en el mundo frontend, y en especial Tailwind CSS. ¿Es una buena opción?, ¿Cubre todas las necesidades en todos los escenarios?, ¿Debemos usarlo en nuestro próximo proyecto?
+                Los frameworks CSS basados en el patrón "Utility-First" están ganando mucha tracción
+                en el mundo frontend, y en especial Tailwind CSS. ¿Es una buena opción?, ¿Cubre
+                todas las necesidades en todos los escenarios?, ¿Debemos usarlo en nuestro próximo
+                proyecto?
               </p>
             </a>
           </div>
@@ -37,7 +55,11 @@
             <div class="flex-shrink-0">
               <a href="https://joanleon.dev/tailwindcss" target="_blank">
                 <span class="sr-only">Joan León</span>
-                <img class="h-10 w-10 rounded-full" src="https://res.cloudinary.com/nucliweb/image/upload/v1578154091/joanleon.dev/JL.svg" alt="">
+                <img
+                  class="h-10 w-10 rounded-full"
+                  src="https://res.cloudinary.com/nucliweb/image/upload/v1578154091/joanleon.dev/JL.svg"
+                  alt=""
+                />
               </a>
             </div>
             <div class="ml-3">
@@ -47,38 +69,52 @@
                 </a>
               </p>
               <div class="flex space-x-1 text-sm text-gray-500">
-                <time datetime="2021-01-26">
-                  Ene 26, 2021
-                </time>
-                <span aria-hidden="true">
-                  &middot;
-                </span>
-                <span>
-                  8 min de lectura
-                </span>
+                <time datetime="2021-01-26"> Ene 26, 2021 </time>
+                <span aria-hidden="true"> &middot; </span>
+                <span> 8 min de lectura </span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="blog_article_2" phx-hook="AnimateOnIntersect" data-threshold="0.30" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 flex flex-col rounded-lg shadow-lg overflow-hidden">
+      <div
+        id="blog_article_2"
+        phx-hook="AnimateOnIntersect"
+        data-threshold="0.30"
+        data-animate-classes="animate__zoomIn, opacity-100"
+        class="opacity-0 flex flex-col rounded-lg shadow-lg overflow-hidden"
+      >
         <div class="flex-shrink-0">
-          <img class="h-48 w-full object-cover" src="https://i.ytimg.com/vi/MZvmYaFkNJI/maxresdefault.jpg" alt="">
+          <img
+            class="h-48 w-full object-cover"
+            src="https://i.ytimg.com/vi/MZvmYaFkNJI/maxresdefault.jpg"
+            alt=""
+          />
         </div>
         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
           <div class="flex-1">
             <p class="text-sm font-medium text-cyan-600">
-              <a href="https://www.youtube.com/watch?v=MZvmYaFkNJI" target="_blank" class="hover:underline">
+              <a
+                href="https://www.youtube.com/watch?v=MZvmYaFkNJI"
+                target="_blank"
+                class="hover:underline"
+              >
                 Video
               </a>
             </p>
-            <a href="https://www.youtube.com/watch?v=MZvmYaFkNJI" target="_blank" class="block mt-2">
+            <a
+              href="https://www.youtube.com/watch?v=MZvmYaFkNJI"
+              target="_blank"
+              class="block mt-2"
+            >
               <p class="text-xl font-semibold text-gray-900">
                 Crea un clon de twitter en 15 minutos con LiveView y Phoenix 1.5
               </p>
               <p class="mt-3 text-base text-justify text-gray-500">
-                El creador de Phoenix muestra cómo usa LiveView para hacer un clon de Twitter en tan sólo 15 minutos. No sólo resulta increíble el potencial de Phoenix LiveView, sino que ver a su creador codeando es una gran oportunidad para aprender!
+                El creador de Phoenix muestra cómo usa LiveView para hacer un clon de Twitter en tan
+                sólo 15 minutos. No sólo resulta increíble el potencial de Phoenix LiveView, sino
+                que ver a su creador codeando es una gran oportunidad para aprender!
               </p>
             </a>
           </div>
@@ -86,48 +122,70 @@
             <div class="flex-shrink-0">
               <a href="https://www.youtube.com/watch?v=MZvmYaFkNJI" target="_blank">
                 <span class="sr-only">Chris McCord</span>
-                <img class="h-10 w-10 rounded-full" src="https://yt3.ggpht.com/ytc/AKedOLSS0uAjaSX2Q6BTnpwcLwUCUiIhHXnGg0Ft-3cyzg=s88-c-k-c0x00ffffff-no-rj" alt="">
+                <img
+                  class="h-10 w-10 rounded-full"
+                  src="https://yt3.ggpht.com/ytc/AKedOLSS0uAjaSX2Q6BTnpwcLwUCUiIhHXnGg0Ft-3cyzg=s88-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
               </a>
             </div>
             <div class="ml-3">
               <p class="text-sm font-medium text-gray-900">
-                <a href="https://www.youtube.com/watch?v=MZvmYaFkNJI" target="_blank" class="hover:underline">
+                <a
+                  href="https://www.youtube.com/watch?v=MZvmYaFkNJI"
+                  target="_blank"
+                  class="hover:underline"
+                >
                   Chris McCord
                 </a>
               </p>
               <div class="flex space-x-1 text-sm text-gray-500">
-                <time datetime="2020-04-22">
-                  Abr 22, 2020
-                </time>
-                <span aria-hidden="true">
-                  &middot;
-                </span>
-                <span>
-                  18 min de video
-                </span>
+                <time datetime="2020-04-22"> Abr 22, 2020 </time>
+                <span aria-hidden="true"> &middot; </span>
+                <span> 18 min de video </span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="blog_article_3" phx-hook="AnimateOnIntersect" data-threshold="0.45" data-animate-classes="animate__zoomIn, opacity-100" class="opacity-0 flex flex-col rounded-lg shadow-lg overflow-hidden">
+      <div
+        id="blog_article_3"
+        phx-hook="AnimateOnIntersect"
+        data-threshold="0.45"
+        data-animate-classes="animate__zoomIn, opacity-100"
+        class="opacity-0 flex flex-col rounded-lg shadow-lg overflow-hidden"
+      >
         <div class="flex-shrink-0">
-          <img class="h-48 w-full object-cover" src="https://www.geistinteractive.com/wp-content/uploads/2018/11/AOC_TwitterAndFeatureImage.png" alt="">
+          <img
+            class="h-48 w-full object-cover"
+            src="https://www.geistinteractive.com/wp-content/uploads/2018/11/AOC_TwitterAndFeatureImage.png"
+            alt=""
+          />
         </div>
         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
           <div class="flex-1">
             <p class="text-sm font-medium text-cyan-600">
-              <a href="https://www.twitch.tv/collections/YDM6eKu6bhV1Nw" target="_blank" class="hover:underline">
+              <a
+                href="https://www.twitch.tv/collections/YDM6eKu6bhV1Nw"
+                target="_blank"
+                class="hover:underline"
+              >
                 Caso de estudio
               </a>
             </p>
-            <a href="https://www.twitch.tv/collections/YDM6eKu6bhV1Nw" target="_blank" class="block mt-2">
-              <p class="text-xl font-semibold text-gray-900">
-                Advent of Code 2018 by José Valim
-              </p>
+            <a
+              href="https://www.twitch.tv/collections/YDM6eKu6bhV1Nw"
+              target="_blank"
+              class="block mt-2"
+            >
+              <p class="text-xl font-semibold text-gray-900">Advent of Code 2018 by José Valim</p>
               <p class="mt-3 text-base text-justify text-gray-500">
-                AOC es un clásico desafío anual del tiempo de Adviento en donde se plantean varios problemas a resolver en el lenguage de programación que más te guste. Te compartimos cómo José Valim, el creador de Elixir, usa nuestro lenguage favorito para resolver los problemas de 2018. Una mente brillante que te va a deslumbrar con su elegancia a la hora de codear!
+                AOC es un clásico desafío anual del tiempo de Adviento en donde se plantean varios
+                problemas a resolver en el lenguage de programación que más te guste. Te compartimos
+                cómo José Valim, el creador de Elixir, usa nuestro lenguage favorito para resolver
+                los problemas de 2018. Una mente brillante que te va a deslumbrar con su elegancia a
+                la hora de codear!
               </p>
             </a>
           </div>
@@ -135,25 +193,27 @@
             <div class="flex-shrink-0">
               <a href="https://www.twitch.tv/collections/YDM6eKu6bhV1Nw" target="_blank">
                 <span class="sr-only">José Valim</span>
-                <img class="h-10 w-10 rounded-full" src="https://static-cdn.jtvnw.net/jtv_user_pictures/128192c8-53bf-4f0f-815d-cff9a23f8d74-profile_image-70x70.jpg" alt="">
+                <img
+                  class="h-10 w-10 rounded-full"
+                  src="https://static-cdn.jtvnw.net/jtv_user_pictures/128192c8-53bf-4f0f-815d-cff9a23f8d74-profile_image-70x70.jpg"
+                  alt=""
+                />
               </a>
             </div>
             <div class="ml-3">
               <p class="text-sm font-medium text-gray-900">
-                <a href="https://www.twitch.tv/collections/YDM6eKu6bhV1Nw" target="_blank" class="hover:underline">
+                <a
+                  href="https://www.twitch.tv/collections/YDM6eKu6bhV1Nw"
+                  target="_blank"
+                  class="hover:underline"
+                >
                   José Valim
                 </a>
               </p>
               <div class="flex space-x-1 text-sm text-gray-500">
-                <time datetime="2018-01-12">
-                  Diciembre 2018
-                </time>
-                <span aria-hidden="true">
-                  &middot;
-                </span>
-                <span>
-                  horas de entretenimiento!
-                </span>
+                <time datetime="2018-01-12"> Diciembre 2018 </time>
+                <span aria-hidden="true"> &middot; </span>
+                <span> horas de entretenimiento! </span>
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 <main class="sm:grid">
   <%= render_section("welcome.html", bg_color: "bg-gray-900") %>
-    <%= render("sticky_header.html", []) %>
+  <%= render("sticky_header.html", []) %>
   <!-- render_section("portfolio.html", bg_color: "bg-gray-50") -->
   <%= render_section("features.html", bg_color: "bg-white") %>
   <%= render_section("stack.html", bg_color: "bg-gray-50") %>

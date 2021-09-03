@@ -1,87 +1,162 @@
- <header id ="sticky_header" phx-hook="StickyHeader" data-animate-classes="animate__fadeIn, animate__fast, opacity-100" class="opacity-0 h-0 shadow-2xl w-full z-50 bg-gradient-to-b from-gray-900 to-gray-800 py-2">
-    <nav x-data="{ mobile_menu: false }" class="flex sm:items-center flex-col sm:justify-between px-4 sm:px-6 max-w-7xl mx-auto" aria-label="Global">
-
-      <div class="flex justify-between items-center w-full">
-        <!-- Caravana logo -->
-        <div class="flex items-center justify-center">
-          <div class="w-11 bg-gradient-to-r from-teal-300 to-cyan-400 rounded-full text-gray-900">
-            <%= render "svgs/logo.html", [] %>
-          </div>
-          <div class="flex flex-col text-white ml-3 pb-1 items-center">
-            <span class="text-3xl">Caravana</span>
-            <small class="text-xs">Software para tus ideas</small>
-          </div>
+<header
+  id="sticky_header"
+  phx-hook="StickyHeader"
+  data-animate-classes="animate__fadeIn, animate__fast, opacity-100"
+  class="opacity-0 h-0 shadow-2xl w-full z-50 bg-gradient-to-b from-gray-900 to-gray-800 py-2"
+>
+  <nav
+    x-data="{ mobile_menu: false }"
+    class="flex sm:items-center flex-col sm:justify-between px-4 sm:px-6 max-w-7xl mx-auto"
+    aria-label="Global"
+  >
+    <div class="flex justify-between items-center w-full">
+      <!-- Caravana logo -->
+      <div class="flex items-center justify-center">
+        <div class="w-11 bg-gradient-to-r from-teal-300 to-cyan-400 rounded-full text-gray-900">
+          <%= render "svgs/logo.html", [] %>
         </div>
-
-        <!-- PC menu -->
-        <div id="menu_pc" class="hidden sm:flex" >
-          <ul class="flex items-center text-sm font-medium tracking-wider uppercase">
-
-            <li class="welcome text-cyan-500"><a href="#welcome" class="hover:text-teal-600 hover:bg-white py-2 px-3 rounded-md">Inicio</a></li>
-            <!-- <li class="portfolio text-white"><a href="#portfolio" class="hover:text-teal-600 hover:bg-white py-2 px-3 rounded-md">Portfolio</a></li> -->
-            <li class="features text-white"><a href="#features" class="hover:text-teal-600 hover:bg-white py-2 px-3 rounded-md">Software factory</a></li>
-            <li class="stack text-white"><a href="#stack" class="hover:text-teal-600 hover:bg-white py-2 px-3 rounded-md">Stack</a></li>
-            <li class="benchmark text-white"><a href="#benchmark" class="hover:text-teal-600 hover:bg-white py-2 px-3 rounded-md">Benchmark</a></li>
-            <li class="testimonials text-white"><a href="#testimonials" class="hover:text-teal-600 hover:bg-white py-2 px-3 rounded-md">Testimonios</a></li>
-            <li class="blog text-white"><a href="#blog" class="hover:text-teal-600 hover:bg-white py-2 px-3 rounded-md">Blog</a></li>
-
-          </ul>
+        <div class="flex flex-col text-white ml-3 pb-1 items-center">
+          <span class="text-3xl">Caravana</span>
+          <small class="text-xs">Software para tus ideas</small>
         </div>
+      </div>
 
-        <!-- mobile menu -->
-        <!-- hamburger icon -->
-        <div id="mobile_menu" class="flex flex-col sm:hidden" @click="mobile_menu = !mobile_menu"
-            @keydown.escape.window="mobile_menu = false"
-            @click.away="mobile_menu = false"
+      <!-- PC menu -->
+      <div id="menu_pc" class="hidden sm:flex">
+        <ul class="flex items-center text-sm font-medium tracking-wider uppercase">
+          <li class="welcome text-cyan-500">
+            <a href="#welcome" class="hover:text-teal-600 hover:bg-white py-2 px-3 rounded-md"
+              >Inicio</a
+            >
+          </li>
+          <!-- <li class="portfolio text-white"><a href="#portfolio" class="hover:text-teal-600 hover:bg-white py-2 px-3 rounded-md">Portfolio</a></li> -->
+          <li class="features text-white">
+            <a href="#features" class="hover:text-teal-600 hover:bg-white py-2 px-3 rounded-md"
+              >Software factory</a
+            >
+          </li>
+          <li class="stack text-white">
+            <a href="#stack" class="hover:text-teal-600 hover:bg-white py-2 px-3 rounded-md"
+              >Stack</a
+            >
+          </li>
+          <li class="benchmark text-white">
+            <a href="#benchmark" class="hover:text-teal-600 hover:bg-white py-2 px-3 rounded-md"
+              >Benchmark</a
+            >
+          </li>
+          <li class="testimonials text-white">
+            <a href="#testimonials" class="hover:text-teal-600 hover:bg-white py-2 px-3 rounded-md"
+              >Testimonios</a
+            >
+          </li>
+          <li class="blog text-white">
+            <a href="#blog" class="hover:text-teal-600 hover:bg-white py-2 px-3 rounded-md">Blog</a>
+          </li>
+        </ul>
+      </div>
 
-            class="flex items-center">
-
-          <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-            <span class="sr-only">Abrir menú principal</span>
-            <!--
+      <!-- mobile menu -->
+      <!-- hamburger icon -->
+      <div
+        id="mobile_menu"
+        class="flex flex-col sm:hidden"
+        @click="mobile_menu = !mobile_menu"
+        @keydown.escape.window="mobile_menu = false"
+        @click.away="mobile_menu = false"
+        class="flex items-center"
+      >
+        <button
+          type="button"
+          class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Abrir menú principal</span>
+          <!--
               Icon when menu is closed.
               Heroicon name: outline/menu
               Menu open: "hidden", Menu closed: "block"
             -->
-            <svg x-bind:class=" mobile_menu ? 'hidden' : 'block' " class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <!--
+          <svg
+            x-bind:class=" mobile_menu ? 'hidden' : 'block' "
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          <!--
               Icon when menu is open.
               Heroicon name: outline/x
               Menu open: "block", Menu closed: "hidden"
             -->
-            <svg x-bind:class=" mobile_menu ? 'block' : 'hidden' " class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
+          <svg
+            x-bind:class=" mobile_menu ? 'block' : 'hidden' "
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
       </div>
+    </div>
 
-      <!-- mobile menu -->
-      <!-- Dropdown menu -->
-      <div id="menu_mobile" class="pt-6 pb-4" x-show="mobile_menu"
-          x-transition:enter="transition ease-out duration-200"
-          x-transition:enter-start="transform opacity-0 scale-y-0"
-          x-transition:enter-end="transform opacity-100 scale-y-100"
-          x-transition:leave="transition ease-in duration-150"
-          x-transition:leave-start="transform opacity-100 scale-y-100"
-          x-transition:leave-end="transform opacity-0 scale-y-0"
-          role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-
-        <ul class="flex flex-col space-y-4 items-center text-sm font-medium tracking-wider uppercase">
-
-          <li class="welcome text-cyan-500"><a href="#welcome" class="hover:text-teal-600 py-2 px-3">Inicio</a></li>
-          <!-- <li class="portfolio text-white"><a href="#portfolio" class="hover:text-teal-600 py-2 px-3">Portfolio</a></li> -->
-          <li class="features text-white"><a href="#features" class="hover:text-teal-600 py-2 px-3">Software factory</a></li>
-          <li class="stack text-white"><a href="#stack" class="hover:text-teal-600 py-2 px-3">Stack</a></li>
-          <li class="benchmark text-white"><a href="#benchmark" class="hover:text-teal-600 py-2 px-3">Benchmark</a></li>
-          <li class="testimonials text-white"><a href="#testimonials" class="hover:text-teal-600 py-2 px-3">Testimonios</a></li>
-          <li class="blog text-white"><a href="#blog" class="hover:text-teal-600 py-2 px-3">Blog</a></li>
-
-        </ul>
-
-      </div>
-
-    </nav>
+    <!-- mobile menu -->
+    <!-- Dropdown menu -->
+    <div
+      id="menu_mobile"
+      class="pt-6 pb-4"
+      x-show="mobile_menu"
+      x-transition:enter="transition ease-out duration-200"
+      x-transition:enter-start="transform opacity-0 scale-y-0"
+      x-transition:enter-end="transform opacity-100 scale-y-100"
+      x-transition:leave="transition ease-in duration-150"
+      x-transition:leave-start="transform opacity-100 scale-y-100"
+      x-transition:leave-end="transform opacity-0 scale-y-0"
+      role="menu"
+      aria-orientation="vertical"
+      aria-labelledby="user-menu-button"
+      tabindex="-1"
+    >
+      <ul class="flex flex-col space-y-4 items-center text-sm font-medium tracking-wider uppercase">
+        <li class="welcome text-cyan-500">
+          <a href="#welcome" class="hover:text-teal-600 py-2 px-3">Inicio</a>
+        </li>
+        <!-- <li class="portfolio text-white"><a href="#portfolio" class="hover:text-teal-600 py-2 px-3">Portfolio</a></li> -->
+        <li class="features text-white">
+          <a href="#features" class="hover:text-teal-600 py-2 px-3">Software factory</a>
+        </li>
+        <li class="stack text-white">
+          <a href="#stack" class="hover:text-teal-600 py-2 px-3">Stack</a>
+        </li>
+        <li class="benchmark text-white">
+          <a href="#benchmark" class="hover:text-teal-600 py-2 px-3">Benchmark</a>
+        </li>
+        <li class="testimonials text-white">
+          <a href="#testimonials" class="hover:text-teal-600 py-2 px-3">Testimonios</a>
+        </li>
+        <li class="blog text-white">
+          <a href="#blog" class="hover:text-teal-600 py-2 px-3">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>

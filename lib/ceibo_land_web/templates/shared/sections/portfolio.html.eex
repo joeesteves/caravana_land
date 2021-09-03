@@ -1,8 +1,15 @@
 <section id="portfolio" class="relative <%= @bg_color %> py-20">
   <div class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
-
-    <div id="porfolio_header" phx-hook="AnimateOnIntersect" data-threshold="0.05" data-animate-classes="animate__fadeInUp, opacity-100" class="opacity-0">
-      <h2 class="text-base bg-gree font-semibold tracking-wider text-cyan-600 uppercase">Portfolio</h2>
+    <div
+      id="porfolio_header"
+      phx-hook="AnimateOnIntersect"
+      data-threshold="0.05"
+      data-animate-classes="animate__fadeInUp, opacity-100"
+      class="opacity-0"
+    >
+      <h2 class="text-base bg-gree font-semibold tracking-wider text-cyan-600 uppercase">
+        Portfolio
+      </h2>
       <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
         Nuestros últimos trabajos
       </p>
@@ -14,114 +21,137 @@
     <div id="portfolio_carousel" phx-hook="Carousel" class="splide mt-10">
       <div class="splide__track bg-white rounded-lg shadow-lg">
         <ul class="splide__list">
-
-
           <!-- project 1 -->
           <li class="splide__slide divide-y">
             <div id="inner_carousel1" phx-hook="InnerCarousel">
-               <div class="splide__track">
-                  <ul class="splide__list">
-
-                    <li class="splide__slide flex">
-                      <img class="sm:w-2/3" src="/images/portfolio/tu_libreria1.png" alt="">
-                      <div class="hidden sm:flex flex-col justify-around space-y-4 items-center p-6">
-                        <div class="flow-root h-full bg-gray-50 rounded-lg">
-                          <div class="relative">
-                            <div class="absolute -top-2 right-2">
-                              <%= render_feature_logo("feature_config.html") %>
-                            </div>
-                            <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 1</h3>
-                            <p class="mt-5 text-base text-gray-500 px-4">
-                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae tempora dicta.
-                            </p>
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide flex">
+                    <img class="sm:w-2/3" src="/images/portfolio/tu_libreria1.png" alt="" />
+                    <div class="hidden sm:flex flex-col justify-around space-y-4 items-center p-6">
+                      <div class="flow-root h-full bg-gray-50 rounded-lg">
+                        <div class="relative">
+                          <div class="absolute -top-2 right-2">
+                            <%= render_feature_logo("feature_config.html") %>
                           </div>
-                        </div>
-
-                        <div class="flow-root h-full bg-gray-50 rounded-lg">
-                          <div class="relative">
-                            <div class="absolute -top-2 right-2">
-                              <%= render_feature_logo("feature_cloud_upload.html") %>
-                            </div>
-                            <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 2</h3>
-                            <p class="mt-5 text-base text-gray-500 px-4">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos accusamus saepe laboriosam quaerat dignissimos voluptatem dicta reprehenderit nihil odit.
-                            </p>
-                          </div>
+                          <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">
+                            Funcionalidad 1
+                          </h3>
+                          <p class="mt-5 text-base text-gray-500 px-4">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                            vitae tempora dicta.
+                          </p>
                         </div>
                       </div>
-                    </li>
 
-                    <li class="splide__slide flex">
-                      <img class="sm:w-2/3" src="/images/portfolio/tu_libreria2.png" alt="">
-                      <div class="hidden sm:flex flex-col justify-around space-y-4 items-center p-6">
-                        <div class="flow-root h-full bg-gray-50 rounded-lg">
-                          <div class="relative">
-                            <div class="absolute -top-2 right-2">
-                              <%= render_feature_logo("feature_pwa.html") %>
-                            </div>
-                            <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 3</h3>
-                            <p class="mt-5 text-base text-gray-500 px-4">
-                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae tempora dicta.
-                            </p>
+                      <div class="flow-root h-full bg-gray-50 rounded-lg">
+                        <div class="relative">
+                          <div class="absolute -top-2 right-2">
+                            <%= render_feature_logo("feature_cloud_upload.html") %>
                           </div>
-                        </div>
-
-                        <div class="flow-root h-full bg-gray-50 rounded-lg">
-                          <div class="relative">
-                            <div class="absolute -top-2 right-2">
-                              <%= render_feature_logo("feature_lock_closed.html") %>
-                            </div>
-                            <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 4</h3>
-                            <p class="mt-5 text-base text-gray-500 px-4">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos accusamus saepe laboriosam quaerat dignissimos voluptatem dicta reprehenderit nihil odit.
-                            </p>
-                          </div>
+                          <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">
+                            Funcionalidad 2
+                          </h3>
+                          <p class="mt-5 text-base text-gray-500 px-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos
+                            accusamus saepe laboriosam quaerat dignissimos voluptatem dicta
+                            reprehenderit nihil odit.
+                          </p>
                         </div>
                       </div>
-                    </li>
+                    </div>
+                  </li>
 
-                    <li class="splide__slide flex">
-                      <img class="sm:w-2/3" src="/images/portfolio/tu_libreria3.png" alt="">
-                      <div class="hidden sm:flex flex-col justify-around space-y-4 items-center p-6">
-                        <div class="flow-root h-full bg-gray-50 rounded-lg">
-                          <div class="relative">
-                            <div class="absolute -top-2 right-2">
-                              <%= render_feature_logo("feature_shield_check.html") %>
-                            </div>
-                            <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 5</h3>
-                            <p class="mt-5 text-base text-gray-500 px-4">
-                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae tempora dicta.
-                            </p>
+                  <li class="splide__slide flex">
+                    <img class="sm:w-2/3" src="/images/portfolio/tu_libreria2.png" alt="" />
+                    <div class="hidden sm:flex flex-col justify-around space-y-4 items-center p-6">
+                      <div class="flow-root h-full bg-gray-50 rounded-lg">
+                        <div class="relative">
+                          <div class="absolute -top-2 right-2">
+                            <%= render_feature_logo("feature_pwa.html") %>
                           </div>
-                        </div>
-
-                        <div class="flow-root h-full bg-gray-50 rounded-lg">
-                          <div class="relative">
-                            <div class="absolute -top-2 right-2">
-                              <%= render_feature_logo("feature_refresh_or_sync.html") %>
-                            </div>
-                            <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 6</h3>
-                            <p class="mt-5 text-base text-gray-500 px-4">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos accusamus saepe laboriosam quaerat dignissimos voluptatem dicta reprehenderit nihil odit.
-                            </p>
-                          </div>
+                          <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">
+                            Funcionalidad 3
+                          </h3>
+                          <p class="mt-5 text-base text-gray-500 px-4">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                            vitae tempora dicta.
+                          </p>
                         </div>
                       </div>
-                    </li>
-                  </ul>
 
-                </div>
+                      <div class="flow-root h-full bg-gray-50 rounded-lg">
+                        <div class="relative">
+                          <div class="absolute -top-2 right-2">
+                            <%= render_feature_logo("feature_lock_closed.html") %>
+                          </div>
+                          <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">
+                            Funcionalidad 4
+                          </h3>
+                          <p class="mt-5 text-base text-gray-500 px-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos
+                            accusamus saepe laboriosam quaerat dignissimos voluptatem dicta
+                            reprehenderit nihil odit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="splide__slide flex">
+                    <img class="sm:w-2/3" src="/images/portfolio/tu_libreria3.png" alt="" />
+                    <div class="hidden sm:flex flex-col justify-around space-y-4 items-center p-6">
+                      <div class="flow-root h-full bg-gray-50 rounded-lg">
+                        <div class="relative">
+                          <div class="absolute -top-2 right-2">
+                            <%= render_feature_logo("feature_shield_check.html") %>
+                          </div>
+                          <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">
+                            Funcionalidad 5
+                          </h3>
+                          <p class="mt-5 text-base text-gray-500 px-4">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                            vitae tempora dicta.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flow-root h-full bg-gray-50 rounded-lg">
+                        <div class="relative">
+                          <div class="absolute -top-2 right-2">
+                            <%= render_feature_logo("feature_refresh_or_sync.html") %>
+                          </div>
+                          <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">
+                            Funcionalidad 6
+                          </h3>
+                          <p class="mt-5 text-base text-gray-500 px-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos
+                            accusamus saepe laboriosam quaerat dignissimos voluptatem dicta
+                            reprehenderit nihil odit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div class="flex flex-col justify-center px-12">
-              <div class="text-left text-3xl font-extrabold tracking-tight bg-gree  text-cyan-600 mt-8">
+              <div
+                class="text-left text-3xl font-extrabold tracking-tight bg-gree  text-cyan-600 mt-8"
+              >
                 Tu Librería
               </div>
               <div class="mt-4 mb-8 text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci laborum facere explicabo vitae culpa nostrum? Ipsum rerum possimus suscipit laudantium consectetur. Doloremque est voluptates voluptatum fuga! Omnis, fugit porro!
-                <br>
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolore incidunt harum, nostrum dolorum cumque reiciendis? Nisi libero distinctio, ipsam eveniet fugit voluptatem, nihil nam quam nulla adipisci sequi illo.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci laborum
+                facere explicabo vitae culpa nostrum? Ipsum rerum possimus suscipit laudantium
+                consectetur. Doloremque est voluptates voluptatum fuga! Omnis, fugit porro!
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolore incidunt
+                harum, nostrum dolorum cumque reiciendis? Nisi libero distinctio, ipsam eveniet
+                fugit voluptatem, nihil nam quam nulla adipisci sequi illo.
               </div>
             </div>
           </li>
@@ -129,117 +159,138 @@
           <!-- project 2 -->
           <li class="splide__slide divide-y">
             <div id="inner_carousel2" phx-hook="InnerCarousel">
-               <div class="splide__track">
-                  <ul class="splide__list">
-
-                    <li class="splide__slide flex">
-                      <img class="sm:w-2/3" src="/images/portfolio/cancionero1.png" alt="">
-                      <div class="hidden sm:flex flex-col justify-around space-y-4 items-center p-6">
-                        <div class="flow-root h-full bg-gray-50 rounded-lg">
-                          <div class="relative">
-                            <div class="absolute -top-2 right-2">
-                              <%= render_feature_logo("feature_refresh_or_sync.html") %>
-                            </div>
-                            <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">APis</h3>
-                            <p class="mt-5 text-base text-gray-500 px-4">
-                              Generamos una integración con la API de Meli
-                            </p>
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide flex">
+                    <img class="sm:w-2/3" src="/images/portfolio/cancionero1.png" alt="" />
+                    <div class="hidden sm:flex flex-col justify-around space-y-4 items-center p-6">
+                      <div class="flow-root h-full bg-gray-50 rounded-lg">
+                        <div class="relative">
+                          <div class="absolute -top-2 right-2">
+                            <%= render_feature_logo("feature_refresh_or_sync.html") %>
                           </div>
-                        </div>
-
-                        <div class="flow-root h-full bg-gray-50 rounded-lg">
-                          <div class="relative">
-                            <div class="absolute -top-2 right-2">
-                              <%= render_feature_logo("feature_cloud_upload.html") %>
-                            </div>
-                            <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 2</h3>
-                            <p class="mt-5 text-base text-gray-500 px-4">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos accusamus saepe laboriosam quaerat dignissimos voluptatem dicta reprehenderit nihil odit.
-                            </p>
-                          </div>
+                          <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">
+                            APis
+                          </h3>
+                          <p class="mt-5 text-base text-gray-500 px-4">
+                            Generamos una integración con la API de Meli
+                          </p>
                         </div>
                       </div>
-                    </li>
 
-                    <li class="splide__slide flex">
-                      <img class="sm:w-2/3" src="/images/portfolio/cancionero2.png" alt="">
-                      <div class="hidden sm:flex flex-col justify-around space-y-4 items-center p-6">
-                        <div class="flow-root h-full bg-gray-50 rounded-lg">
-                          <div class="relative">
-                            <div class="absolute -top-2 right-2">
-                              <%= render_feature_logo("feature_pwa.html") %>
-                            </div>
-                            <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 3</h3>
-                            <p class="mt-5 text-base text-gray-500 px-4">
-                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae tempora dicta.
-                            </p>
+                      <div class="flow-root h-full bg-gray-50 rounded-lg">
+                        <div class="relative">
+                          <div class="absolute -top-2 right-2">
+                            <%= render_feature_logo("feature_cloud_upload.html") %>
                           </div>
-                        </div>
-
-                        <div class="flow-root h-full bg-gray-50 rounded-lg">
-                          <div class="relative">
-                            <div class="absolute -top-2 right-2">
-                              <%= render_feature_logo("feature_lock_closed.html") %>
-                            </div>
-                            <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 4</h3>
-                            <p class="mt-5 text-base text-gray-500 px-4">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos accusamus saepe laboriosam quaerat dignissimos voluptatem dicta reprehenderit nihil odit.
-                            </p>
-                          </div>
+                          <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">
+                            Funcionalidad 2
+                          </h3>
+                          <p class="mt-5 text-base text-gray-500 px-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos
+                            accusamus saepe laboriosam quaerat dignissimos voluptatem dicta
+                            reprehenderit nihil odit.
+                          </p>
                         </div>
                       </div>
-                    </li>
+                    </div>
+                  </li>
 
-                    <li class="splide__slide flex">
-                      <img class="sm:w-2/3" src="/images/portfolio/cancionero3.png" alt="">
-                      <div class="hidden sm:flex flex-col justify-around space-y-4 items-center p-6">
-                        <div class="flow-root h-full bg-gray-50 rounded-lg">
-                          <div class="relative">
-                            <div class="absolute -top-2 right-2">
-                              <%= render_feature_logo("feature_shield_check.html") %>
-                            </div>
-                            <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 5</h3>
-                            <p class="mt-5 text-base text-gray-500 px-4">
-                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae tempora dicta.
-                            </p>
+                  <li class="splide__slide flex">
+                    <img class="sm:w-2/3" src="/images/portfolio/cancionero2.png" alt="" />
+                    <div class="hidden sm:flex flex-col justify-around space-y-4 items-center p-6">
+                      <div class="flow-root h-full bg-gray-50 rounded-lg">
+                        <div class="relative">
+                          <div class="absolute -top-2 right-2">
+                            <%= render_feature_logo("feature_pwa.html") %>
                           </div>
-                        </div>
-
-                        <div class="flow-root h-full bg-gray-50 rounded-lg">
-                          <div class="relative">
-                            <div class="absolute -top-2 right-2">
-                              <%= render_feature_logo("feature_refresh_or_sync.html") %>
-                            </div>
-                            <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">Funcionalidad 6</h3>
-                            <p class="mt-5 text-base text-gray-500 px-4">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos accusamus saepe laboriosam quaerat dignissimos voluptatem dicta reprehenderit nihil odit.
-                            </p>
-                          </div>
+                          <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">
+                            Funcionalidad 3
+                          </h3>
+                          <p class="mt-5 text-base text-gray-500 px-4">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                            vitae tempora dicta.
+                          </p>
                         </div>
                       </div>
-                    </li>
-                  </ul>
 
-                </div>
+                      <div class="flow-root h-full bg-gray-50 rounded-lg">
+                        <div class="relative">
+                          <div class="absolute -top-2 right-2">
+                            <%= render_feature_logo("feature_lock_closed.html") %>
+                          </div>
+                          <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">
+                            Funcionalidad 4
+                          </h3>
+                          <p class="mt-5 text-base text-gray-500 px-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos
+                            accusamus saepe laboriosam quaerat dignissimos voluptatem dicta
+                            reprehenderit nihil odit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="splide__slide flex">
+                    <img class="sm:w-2/3" src="/images/portfolio/cancionero3.png" alt="" />
+                    <div class="hidden sm:flex flex-col justify-around space-y-4 items-center p-6">
+                      <div class="flow-root h-full bg-gray-50 rounded-lg">
+                        <div class="relative">
+                          <div class="absolute -top-2 right-2">
+                            <%= render_feature_logo("feature_shield_check.html") %>
+                          </div>
+                          <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">
+                            Funcionalidad 5
+                          </h3>
+                          <p class="mt-5 text-base text-gray-500 px-4">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                            vitae tempora dicta.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="flow-root h-full bg-gray-50 rounded-lg">
+                        <div class="relative">
+                          <div class="absolute -top-2 right-2">
+                            <%= render_feature_logo("feature_refresh_or_sync.html") %>
+                          </div>
+                          <h3 class="mt-4 text-lg font-medium text-gray-900 tracking-tight">
+                            Funcionalidad 6
+                          </h3>
+                          <p class="mt-5 text-base text-gray-500 px-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eos
+                            accusamus saepe laboriosam quaerat dignissimos voluptatem dicta
+                            reprehenderit nihil odit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div class="flex flex-col justify-center px-12">
-              <div class="text-left text-3xl font-extrabold tracking-tight bg-gree  text-cyan-600 mt-8">
+              <div
+                class="text-left text-3xl font-extrabold tracking-tight bg-gree  text-cyan-600 mt-8"
+              >
                 Cancionero de Folklore
               </div>
               <div class="mt-4 mb-8 text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci laborum facere explicabo vitae culpa nostrum? Ipsum rerum possimus suscipit laudantium consectetur. Doloremque est voluptates voluptatum fuga! Omnis, fugit porro!
-                <br>
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolore incidunt harum, nostrum dolorum cumque reiciendis? Nisi libero distinctio, ipsam eveniet fugit voluptatem, nihil nam quam nulla adipisci sequi illo.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci laborum
+                facere explicabo vitae culpa nostrum? Ipsum rerum possimus suscipit laudantium
+                consectetur. Doloremque est voluptates voluptatum fuga! Omnis, fugit porro!
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolore incidunt
+                harum, nostrum dolorum cumque reiciendis? Nisi libero distinctio, ipsam eveniet
+                fugit voluptatem, nihil nam quam nulla adipisci sequi illo.
               </div>
             </div>
           </li>
-
         </ul>
-
       </div>
     </div>
-
   </div>
 </section>
