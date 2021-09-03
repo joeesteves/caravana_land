@@ -11,6 +11,10 @@ input {
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* LiveView specific classes for your customizations */
 
 .phx-no-feedback.invalid-feedback,

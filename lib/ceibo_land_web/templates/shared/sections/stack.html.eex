@@ -1,4 +1,4 @@
-<div id="stack" class="relative <%= @bg_color %> py-16">
+<section id="stack" class="relative <%= @bg_color %> py-20">
   <div class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
     <div
       id="stack_header"
@@ -96,4 +96,4 @@
       <codersrank-summary username="nicocirio"></codersrank-summary>
     </div>
   </div>
-</div>
+</section>

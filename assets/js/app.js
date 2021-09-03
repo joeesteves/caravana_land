@@ -74,6 +74,88 @@ Hooks.InnerCarousel = {
 
 }
 
+// ################## sticky header ######################
+
+const sections = document.querySelectorAll('section')
+const navigationSectionsPC = document.querySelectorAll('nav #menu_pc ul li')
+const navigationSectionsMobile = document.querySelectorAll('nav #menu_mobile ul li')
+
+window.addEventListener('scroll', () => {
+  let currentSection = ''
+  sections.forEach( section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+
+    if(window.pageYOffset >= (sectionTop - sectionHeight / 3)){
+      currentSection = section.getAttribute('id')
+    }
+  })
+
+  navigationSectionsPC.forEach( navigationSection => {
+    navigationSection.classList.remove('text-cyan-500')
+
+    if(navigationSection.classList.contains(currentSection)){
+      navigationSection.classList.add('text-cyan-500')
+    }
+    else
+    {
+      navigationSection.classList.add('text-white')
+    }
+  })
+
+  navigationSectionsMobile.forEach( navigationSection => {
+    navigationSection.classList.remove('text-cyan-500')
+
+    if(navigationSection.classList.contains(currentSection)){
+      navigationSection.classList.add('text-cyan-500')
+    }
+    else
+    {
+      navigationSection.classList.add('text-white')
+    }
+  })
+
+
+})
+
+
+Hooks.StickyHeader = {
+  mounted() {
+    const animateClasses = this.el.dataset.animateClasses
+
+    if (!animateClasses) return
+
+    this.observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0]
+        if (entry.isIntersecting === true) {
+          const parsedAnimateClasses = animateClasses
+            .split(', ')
+            .concat('fixed', 'top-0', 'animate__animated')
+            .reverse()
+
+
+          this.el.classList.add(...parsedAnimateClasses)
+          this.el.classList.remove('h-0')
+
+          document.querySelector('#welcome_logo').classList.add('opacity-0')
+        }
+      },
+      { 
+        threshold: 0.5,
+        rootMargin: "0px" 
+      }
+    )
+
+    this.observer.observe(this.el)
+  },
+  destroyed() {
+    this.observer.disconnect()
+  },
+}
+
+
+// ############## sticky header end ################
 
 Hooks.AnimateOnIntersect = {
   mounted() {
