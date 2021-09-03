@@ -57,7 +57,7 @@ defmodule CeiboLand.MixProject do
   defp aliases do
     [
       setup: ["deps.get", "cmd npm install --prefix assets"],
-      prettier: "cmd ./assets/node_modules/.bin/prettier --check . --color"
+      prettier: "cmd ./assets/node_modules/.bin/prettier --write . --color"
     ]
   end
 end

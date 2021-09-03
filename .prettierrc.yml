@@ -1,3 +1,4 @@
 singleQuote: true
 semi: false
-
+printWidth: 120
+eexMultilineLineLength: 100
