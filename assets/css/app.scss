@@ -90,9 +90,7 @@ input {
 .alert p {
   margin-bottom: 0;
 }
-.alert:empty {
-  display: none;
-}
+
 .invalid-feedback {
   color: #a94442;
   display: block;
