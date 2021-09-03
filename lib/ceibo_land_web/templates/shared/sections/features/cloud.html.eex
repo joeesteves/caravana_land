@@ -31,8 +31,9 @@
       </div>
       <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Nube</h3>
       <p class="mt-5 text-base text-gray-500">
-        Nuestra infraestructura es 100% cloud. Menor costo y preocupaciones para nuestros clientes.
-        Nuestros proveedores son los mas confiables del mercado (Google y DigitalOcean).
+        Nuestra infraestructura es 100% cloud. Esto significa que no necesitas tus fierros (hardware
+        -> servidores), simplificando el mantenimiento y reduciendo los costos. Nuestros proveedores
+        son los más confiables del mercado (Google y DigitalOcean).
       </p>
     </div>
   </div>

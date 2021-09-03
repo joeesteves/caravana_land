@@ -49,9 +49,11 @@
       </div>
       <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Progressive Web Apps</h3>
       <p class="mt-5 text-base text-gray-500">
-        Las PWA combinan lo mejor de las aplicaciones web y nativas, incluso son consideradas una
-        evolución de las mismas. Una PWA es instalable directamente desde el explorador del móvil y
-        tiene un experiencia de uso similar a una app descargada desde un store.
+        Las
+        <b><%= link "PWA", to: "https://web.dev/progressive-web-apps/", target: "_blank", class: "hover:underline" %></b>
+        combinan lo mejor de las aplicaciones web y nativas, incluso son consideradas una evolución
+        de las mismas. Una PWA es instalable directamente desde el explorador del móvil y tiene un
+        experiencia de uso similar a una app descargada desde un store.
       </p>
     </div>
   </div>

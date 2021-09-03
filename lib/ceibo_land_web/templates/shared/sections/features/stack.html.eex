@@ -29,10 +29,18 @@
           </svg>
         </span>
       </div>
-      <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">100% Online</h3>
+      <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Stack</h3>
       <p class="mt-5 text-base text-gray-500">
-        Elixir nos permite garantizar que tu app va a estar siempre funcional gracias a su sistema
-        integrado de supervisión.
+        Los sistemas diseñados en
+        <b><%= link "Elixir", to: "https://elixir-lang.org/", target: "_blank", class: "hover:underline" %></b>
+        son tolerantes a fallas, self-healing y de baja latencia, garantizando la alta
+        disponibilidad del servicio.<i>
+          Todos los sistemas pueden fallar ante determinadas circunstancias, pero solo algúnos saben
+          recuerarse solos </i
+        >. Por otra parte desplegamos nuestros sistemas con
+        <b><%= link "Kubernetes", to: "https://kubernetes.io/", target: "_blank", class: "hover:underline" %></b
+        >, un orquestador diseñado por google para manterner su ecosistema de apps siempre
+        disponbiles.
       </p>
     </div>
   </div>

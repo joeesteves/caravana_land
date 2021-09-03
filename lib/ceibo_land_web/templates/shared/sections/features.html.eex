@@ -20,12 +20,12 @@
 
     <div class="mt-12">
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <%= render_section "features/bussiness.html" %>
         <%= render_section "features/cloud.html" %>
-        <%= render_section "features/safe.html" %>
         <%= render_section "features/stack.html" %>
+        <%= render_section "features/safe.html" %>
         <%= render_section "features/pwa.html" %>
         <%= render_section "features/apis.html" %>
-        <%= render_section "features/online.html" %>
       </div>
     </div>
   </div>
