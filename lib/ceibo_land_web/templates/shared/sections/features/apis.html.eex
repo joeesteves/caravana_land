@@ -32,7 +32,7 @@
       <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">API's</h3>
       <p class="mt-5 text-base text-gray-500">
         Nuestros servicios pueden conversar con cualquier otro servicio que tenga implementada una
-        API. Hablamos con el mercado financiero, el Rofex, otros ERP' s, es decir con cualquier
+        API. Hablamos con el mercado financiero, el Rofex, otros ERP' s, es decir, con cualquier
         sistema que tenga una API. También las desarrollamos en dos sabores REST o GraphQL.
       </p>
     </div>

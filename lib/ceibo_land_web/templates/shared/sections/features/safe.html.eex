@@ -33,10 +33,10 @@
       <p class="mt-5 text-base text-gray-500">
         Nuestras aplicaciones y servicios web siempre están desplegadas bajo el
         <b
-          ><small><%= link "protocolo https", to: "https://en.wikipedia.org/wiki/HTTPS", target: "_blank" %></small></b
+          ><%= link "protocolo https", to: "https://en.wikipedia.org/wiki/HTTPS", target: "_blank", class: "hover:underline" %></b
         >, garantizando la confidencialidad de sus datos. Siempre mantenemos nuestras herramientas
         al día, manteniendo todas las librerías que utilizamos con los últimos parches de seguridad.
-        Todos las dependencias utilizadas por caravana son open source.
+        Todos las dependencias utilizadas por Caravana son open source.
       </p>
     </div>
   </div>

@@ -36,10 +36,11 @@
         son tolerantes a fallas, self-healing y de baja latencia, garantizando la alta
         disponibilidad del servicio.<i>
           Todos los sistemas pueden fallar ante determinadas circunstancias, pero solo algúnos saben
-          recuerarse solos </i
-        >. Por otra parte desplegamos nuestros sistemas con
-        <b><%= link "Kubernetes", to: "https://kubernetes.io/", target: "_blank", class: "hover:underline" %></b
-        >, un orquestador diseñado por google para manterner su ecosistema de apps siempre
+          recuperarse solos </i>.
+          <br>
+          Por otra parte desplegamos nuestros sistemas con
+        <b><%= link "Kubernetes", to: "https://kubernetes.io/", target: "_blank", class: "hover:underline" %></b>,
+        un orquestador diseñado por Google para manterner su ecosistema de apps siempre
         disponbiles.
       </p>
     </div>
