@@ -18,6 +18,8 @@ defmodule CeiboLandWeb.Router do
     pipe_through :browser
 
     live "/", PageLive, :index
+
+    get "/en/joe", JoeController, :index
   end
 
   # Other scopes may use custom stacks.
