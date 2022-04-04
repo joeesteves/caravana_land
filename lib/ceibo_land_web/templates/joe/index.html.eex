@@ -9,29 +9,21 @@
       rel="stylesheet"
       href="<%= Routes.static_path(@conn, "/css/profile.css") %>"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 <body>
   <div class="header bg-primary">
-    <section class="main-header">
+    <div>
       Joe Esteves
-    </section>
+    </div>
   </div>
   <div class="body d-flex vh-100">
     <div class="d-flex flex-column w-25 bg-secondary vh-100">
       left-a
     </div>
-    <div class="d-flex flex-column w-75 bg-danger vh-100 ps-4">
+    <div class="d-flex flex-column w-75 bg-danger vh-100 ps-5">
       <section class="profile">
-        <div class="section-header">Profile</div>
-
-        <div class="section-body">
-          <p>Full Stack Software developer with more than a decade of experience. I build B2B solutions using Elixir and Phoenix<p>
-          <p>I have experience with Ruby on Rails, MEAN Stack and ReactJS. I've worked for several years on a Ruby on Rails start-up as part of a global remote team and I feel comfortable with working async.</p>
-          <p>On my soft shop I have to deal with all the parts involved in software development, design, code, test, and deployment. I know how to ship software</p>
-          <p>I choose Elixir + Phoenix for new projects.</p>
-        </div>
-      </section>
-
-      <section class="employments">
         <div class="section-header">Profile</div>
 
         <div class="section-body">
