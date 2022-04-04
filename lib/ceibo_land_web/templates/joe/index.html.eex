@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joe Esteves</title>
+</head>
+    <link
+      phx-track-static
+      rel="stylesheet"
+      href="<%= Routes.static_path(@conn, "/css/profile.css") %>"
+    />
+<body>
+  <div class="header bg-primary">
+    <section class="main-header">
+      Joe Esteves
+    </section>
+  </div>
+  <div class="body d-flex vh-100">
+    <div class="d-flex flex-column w-25 bg-secondary vh-100">
+      left-a
+    </div>
+    <div class="d-flex flex-column w-75 bg-danger vh-100 ps-4">
+      <section class="profile">
+        <div class="section-header">Profile</div>
+
+        <div class="section-body">
+          <p>Full Stack Software developer with more than a decade of experience. I build B2B solutions using Elixir and Phoenix<p>
+          <p>I have experience with Ruby on Rails, MEAN Stack and ReactJS. I've worked for several years on a Ruby on Rails start-up as part of a global remote team and I feel comfortable with working async.</p>
+          <p>On my soft shop I have to deal with all the parts involved in software development, design, code, test, and deployment. I know how to ship software</p>
+          <p>I choose Elixir + Phoenix for new projects.</p>
+        </div>
+      </section>
+
+      <section class="employments">
+        <div class="section-header">Profile</div>
+
+        <div class="section-body">
+          <p>Full Stack Software developer with more than a decade of experience. I build B2B solutions using Elixir and Phoenix<p>
+          <p>I have experience with Ruby on Rails, MEAN Stack and ReactJS. I've worked for several years on a Ruby on Rails start-up as part of a global remote team and I feel comfortable with working async.</p>
+          <p>On my soft shop I have to deal with all the parts involved in software development, design, code, test, and deployment. I know how to ship software</p>
+          <p>I choose Elixir + Phoenix for new projects.</p>
+        </div>
+      </section>
+
+      <section class="education">
+        <div class="section-header">Profile</div>
+
+        <div class="section-body">
+          <p>Full Stack Software developer with more than a decade of experience. I build B2B solutions using Elixir and Phoenix<p>
+          <p>I have experience with Ruby on Rails, MEAN Stack and ReactJS. I've worked for several years on a Ruby on Rails start-up as part of a global remote team and I feel comfortable with working async.</p>
+          <p>On my soft shop I have to deal with all the parts involved in software development, design, code, test, and deployment. I know how to ship software</p>
+          <p>I choose Elixir + Phoenix for new projects.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
