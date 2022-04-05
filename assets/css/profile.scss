@@ -1,4 +1,6 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import './fontawesome.scss';
+
 $color: black;
 
 body {
@@ -16,12 +18,18 @@ body {
     }
 
     .section-body {
-      &::before {
-        content: 'o';
-        font-weight: bold;
-        position: relative;
-        left: -30.5px;
-        top: -18px;
+      .circle-tip {
+        margin-bottom: -60px;
+
+        &::before {
+          content: '•';
+          font-size: 2em;
+          font-weight: bold;
+          position: relative;
+          left: -36px;
+          top: -24px;
+          height: 0px;
+        }
       }
 
       border-left: solid $color 3px;
