@@ -1,10 +1,10 @@
 <section class="education">
-  <div class="section-header">
+  <div class="section__header">
     <i class="fa-solid fa-briefcase"></i>
     Employment history
   </div>
 
-  <div class="section-body">
+  <div class="section__body">
     <div class="circle-tip"></div>
     <p>
       <strong>Senior Developer at Crosshero</strong><br>

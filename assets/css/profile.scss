@@ -9,6 +9,7 @@ body {
 
   .header {
     margin-top: 1.5em;
+
     img {
       height: 100px;
       border-radius: 30px;
@@ -19,9 +20,26 @@ body {
     text-transform: uppercase;
   }
 
+  .sidebar {
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      span {
+        display: inline-block;
+        width: 350px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: center;
+      }
+    }
+  }
+
   section {
     position: relative;
-    .section-header {
+    .section__header {
       font-size: 1.5em;
       font-variant: small-caps;
       font-weight: bold;
@@ -29,7 +47,7 @@ body {
       margin-bottom: 1em;
     }
 
-    .section-body {
+    .section__body {
       .circle-tip {
         margin-bottom: -56px;
 
@@ -47,13 +65,29 @@ body {
       border-left: solid $color 3px;
       padding-left: 1.5em;
     }
+
+    .sidebar__header {
+      margin-top: 1em;
+      font-size: 1.5em;
+      font-variant: small-caps;
+      font-weight: bold;
+      margin-bottom: 0.6em;
+
+      &::before,
+      &::after {
+        margin-left: 5px;
+        margin-right: 5px;
+        content: '-';
+        font-size: 0.4em;
+        font-weight: bold;
+        position: relative;
+        top: -4px;
+      }
+    }
   }
 }
 
 @media print {
-  @page {
-    size: A4 portrait;
-  }
   body {
     width: 210mm;
     margin-right: 20mm;
@@ -61,38 +95,25 @@ body {
 
     .header {
       margin-top: 0.5em;
-      background-color: red;
     }
+
     .header_title {
       font-size: 2em;
-      text-transform: uppercase;
     }
-    section {
-      position: relative;
-      .section-header {
-        font-size: 1.5em;
-        font-variant: small-caps;
-        font-weight: bold;
-        margin-top: 1em;
-        margin-bottom: 1em;
-      }
 
-      .section-body {
+    section {
+      .section__body {
         .circle-tip {
-          margin-bottom: -44px;
+          margin-bottom: -49px;
 
           &::before {
-            content: '•';
             font-size: 2.5em;
-            font-weight: bold;
-            position: relative;
-            left: -27.5px;
+            left: -26px;
             top: -18px;
-            height: 0px;
           }
         }
 
-        border-left: solid $color 3px;
+        border-left: solid $color 1px;
         padding-left: 1.5em;
       }
     }

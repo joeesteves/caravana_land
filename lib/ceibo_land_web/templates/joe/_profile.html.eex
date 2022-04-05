@@ -1,10 +1,10 @@
 <section class="profile">
-  <div class="section-header">
+  <div class="section__header">
     <i class="fa-solid fa-user"></i>
     Profile
   </div>
 
-  <div class="section-body">
+  <div class="section__body">
     <div class="circle-tip"></div>
     <p>Full Stack Software developer with more than a decade of experience. I build B2B solutions using Elixir and Phoenix<p>
     <p>I have experience with Ruby on Rails, MEAN Stack and ReactJS. I've worked for several years on a Ruby on Rails start-up as part of a global remote team and I feel comfortable with working async.</p>
