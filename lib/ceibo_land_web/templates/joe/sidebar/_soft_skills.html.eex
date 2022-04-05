@@ -1,0 +1,10 @@
+<section>
+  <div class="sidebar__header">SoftSkills</div>
+  <span><i class="fa-brands fa-ubuntu"></i></i>  Team player</span>
+  <span><i class="fa-solid fa-house-laptop"></i> Remote and async working</span>
+  <span><i class="fa-solid fa-hourglass-empty"></i>  Time management</span>
+  <span><i class="fa-solid fa-screwdriver-wrench"></i>  Problem-solving skills</span>
+  <span><i class="fa-solid fa-lightbulb"></i>  Critical thinking</span>
+  <span><i class="fa-brands fa-leanpub"></i>  Self-learning</span>
+  <span><i class="fa-solid fa-file-invoice"></i>  Accountability</span>
+</section>

@@ -21,7 +21,7 @@
       </div>
       <div class="main d-flex flex-column">
         <%= render "_profile.html" %>
-        <%= render "_education.html" %>
+        <%= render "_employments.html" %>
       </div>
     </div>
   </body>

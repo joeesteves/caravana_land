@@ -1,9 +1,12 @@
 <section class="education">
   <div class="section__header">
     <i class="fa-solid fa-briefcase"></i>
-      Education history
+    Employment history
   </div>
 
   <div class="section__body">
+    <%= render "employments/_caravana.html" %>
+    <br>
+    <%= render "employments/_crosshero.html" %>
   </div>
 </section>

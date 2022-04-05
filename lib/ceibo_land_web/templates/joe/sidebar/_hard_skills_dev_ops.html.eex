@@ -1,0 +1,7 @@
+<section>
+  <div class="sidebar__header">HardSkills DevOps</div>
+  <span><i class="fa-brands fa-linux"></i>  Linux SysAdmin</span>
+  <span><i class="fa-brands fa-docker"></i>  Docker</span>
+  <span><i class="fa-solid fa-crosshairs"></i>  Kubernetes</span>
+  <span><i class="fa-solid fa-terminal"></i>  Bash & Vim Scripting</span>
+</section>

@@ -1,0 +1,6 @@
+<section>
+  <div class="sidebar__header">HardSkills Databases</div>
+  <span><i class="fa-solid fa-database"></i> PostgreSQL - MySQL</span>
+  <span><i class="fa-solid fa-layer-group"></i> MongoDB - CoachDB</span>
+  <span><i class="fa-solid fa-memory"></i>  ETS</span>
+</section>

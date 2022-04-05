@@ -1,0 +1,8 @@
+<section>
+  <div class="sidebar__header">HardSkills Languages</div>
+  <span><i class="fa-brands fa-phoenix-framework"></i> Elixir - Phoenix - LiveView</span>
+  <span><i class="fa-solid fa-gem"></i> Ruby - RoR</span>
+  <span><i class="fa-brands fa-js-square"></i>  JavaScript -  ECMAScript</span>
+  <span><i class="fa-brands fa-node-js"></i>  NodeJS</span>
+  <span><i class="fa-brands fa-react"></i> ReactJS - Redux</span>
+</section>
