@@ -4,6 +4,10 @@
 $color: black;
 
 body {
+  a {
+    color: $color;
+    text-decoration: none;
+  }
   font-family: 'Roboto Mono', monospace;
   color: $color;
 
