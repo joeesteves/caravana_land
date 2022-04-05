@@ -14,57 +14,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
   <link rel="icon" href="<%= Routes.static_path(@conn, "/images/favicon.ico") %>" />
   <body>
-    <div class="header bg-primary">
-      <div>
-        Joe Esteves
-      </div>
-    </div>
-    <div class="body d-flex vh-100">
-      <div class="d-flex flex-column w-25 bg-secondary vh-100">
+    <%= render "_header.html", conn: @conn %>
+    <div class="body d-flex">
+      <div class="d-flex flex-column w-25 bg-secondary">
         left-a
       </div>
-      <div class="d-flex flex-column w-75 bg-danger vh-100 ps-5">
-        <section class="profile">
-          <div class="section-header">
-            <i class="fa-solid fa-user"></i>
-            Profile
-          </div>
-
-          <div class="section-body">
-            <div class="circle-tip"></div>
-            <p>Full Stack Software developer with more than a decade of experience. I build B2B solutions using Elixir and Phoenix<p>
-            <p>I have experience with Ruby on Rails, MEAN Stack and ReactJS. I've worked for several years on a Ruby on Rails start-up as part of a global remote team and I feel comfortable with working async.</p>
-            <p>On my soft shop I have to deal with all the parts involved in software development, design, code, test, and deployment. I know how to ship software</p>
-            <p>I choose Elixir + Phoenix <i class="fa-brands fa-phoenix-framework"></i> for new projects.</p>
-          </div>
-        </section>
-
-        <section class="education">
-          <div class="section-header">
-            <i class="fa-solid fa-briefcase"></i>
-            Employment history
-          </div>
-
-          <div class="section-body">
-            <div class="circle-tip"></div>
-            <p>
-              <strong>Senior Developer at Crosshero</strong><br>
-              <i>August 2017 - Present</i>
-            </p>
-            <p>
-              Full-stack developer. I have the responsibility to add new features to our system, maintain and improve the overall software's correct functioning
-            </p>
-            <br>
-            <div class="circle-tip"></div>
-            <p>
-              <strong>Owner and lead developepr at Caravana</strong><br>
-              <i>March 2012 - Present</i>
-            </p>
-            <p>
-              Caravana.dev is my software shop. Here I bring my client's ideas to life. Mostly B2B Software that helps improving internal processes.
-            </p>
-          </div>
-        </section>
+      <div class="d-flex flex-column w-75 ps-5">
+        <%= render "_profile.html" %>
+        <%= render "_education.html" %>
       </div>
     </div>
   </body>

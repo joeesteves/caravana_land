@@ -1,0 +1,26 @@
+<section class="education">
+  <div class="section-header">
+    <i class="fa-solid fa-briefcase"></i>
+    Employment history
+  </div>
+
+  <div class="section-body">
+    <div class="circle-tip"></div>
+    <p>
+      <strong>Senior Developer at Crosshero</strong><br>
+      <i>August 2017 - Present</i>
+    </p>
+    <p>
+      Full-stack developer. I have the responsibility to add new features to our system, maintain and improve the overall software's correct functioning
+    </p>
+    <br>
+    <div class="circle-tip"></div>
+    <p>
+      <strong>Owner and lead developepr at Caravana</strong><br>
+      <i>March 2012 - Present</i>
+    </p>
+    <p>
+      Caravana.dev is my software shop. Here I bring my client's ideas to life. Mostly B2B Software that helps improving internal processes.
+    </p>
+  </div>
+</section>

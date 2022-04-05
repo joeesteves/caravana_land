@@ -1,0 +1,9 @@
+<div class="header d-flex flex-column align-items-center">
+  <%= img_tag Routes.static_path(@conn, "/images/joe_profile.jpg") %>
+  <div class="header_title">
+    Joe Esteves
+  </div>
+  <div class="header_subtitle mb-4">
+    Software Developer
+  </div>
+</div>
