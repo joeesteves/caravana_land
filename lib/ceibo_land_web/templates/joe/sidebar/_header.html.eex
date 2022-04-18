@@ -2,4 +2,8 @@
   <div class="sidebar__header">Details</div>
   <span>joe@caravana.dev</span>
   <span>+54 • 11 • 2234 • 9046</span>
+  <div class="d-flex">
+    <a href="https://github.com/ponyesteves" target="_blank" class="me-2"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/estevesjoe/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
 </section>
