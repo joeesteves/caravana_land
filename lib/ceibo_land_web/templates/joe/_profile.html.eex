@@ -6,9 +6,11 @@
 
   <div class="section__body">
     <div class="circle-tip"></div>
-    <p>Full Stack Software developer with more than a decade of experience. I build B2B solutions using Elixir and Phoenix<p>
-    <p>I have experience with Ruby on Rails, MEAN Stack and ReactJS. I've worked for several years on a Ruby on Rails start-up as part of a global remote team and I feel comfortable with working async.</p>
-    <p>On my soft software shop I have to deal with all the parts involved in software development, design, code, test, and deployment. I know how to ship software</p>
+    <p>Full-Stack Software developer with more than a decade of experience. I build B2B solutions using Elixir and Phoenix.</p>
+    <p>I also handle Ruby on Rails, MEAN Stack, and ReactJS. I've worked for several years on a Ruby on Rails start-up integrating a global team. I feel comfortable working remote and async.</p>
+    <p>In my soft software shop, I have to deal with all the parts involved in software development, design, code, test, and deployment. I know how to ship software.</p>
     <p>I choose Elixir + Phoenix <i class="fa-solid fa-heart"></i> for new projects.</p>
+    <p>Deploy on Kubernets when possible</p>
+    <p>I'm a blockchain enthusiast</p>
   </div>
 </section>
